@@ -1,0 +1,93 @@
+.img-carousel{
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  opacity:0.8
+}
+.carousel-caption{
+  position: absolute;
+  top:50%;
+  left:20%
+}
+.text-black{
+  color:rgb(202, 202, 202) !important;
+}
+.navi{
+  position:absolute;
+}
+.nav-item{
+  font-weight: bolder;
+}
+.nav-item:hover::after{
+  color:orange;
+  content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely at the bottom of the link container */
+    left: 0;
+    bottom: -2px; /* Adjust this value to control the distance of the underline from the link */
+    width: 100%; /* Make the underline span the full width of the link container */
+   
+}
+.nav-link{
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Set the link color */
+    position: relative; /* Add relative positioning to the link container */
+}
+.nav-link:hover::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely at the bottom of the link container */
+    left: 0;
+    bottom: -2px; /* Adjust this value to control the distance of the underline from the link */
+    width: 100%; /* Make the underline span the full width of the link container */
+    border-bottom: 2px solid #000; /* Define the underline style */
+    
+  }
+  .text-bright{
+    color:rgb(252, 39, 1);
+    font-weight: bold;
+  }
+  .img-zoom:hover{
+    transform:scale(1.1);
+    
+  }
+
+  .quote{
+    padding-top: 20px;
+    font-size: 2rem;
+    font-style: italic;
+    color:#857ab1;
+  }
+  .quote__text::before{
+content:open-quote
+  }
+  .quote__text::after{
+    content:close-quote
+      }
+.quote__name{
+  font-weight: bold;
+  color:rgb(11, 4, 59)
+}
+.header{
+  font-weight: bold;
+   text-transform: uppercase; 
+  color:#ff6347
+}
+.footer{
+  background-color: #222222;
+  color:ghostwhite;
+}
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer a{
+  text-decoration: none;
+  color: ghostwhite;
+  
+}
+.numbers{
+  background-image: url("./assets/sunset.jpg")  ;
+  background-position: center;
+  background-attachment: fixed;
+  color:ghostwhite;
+}

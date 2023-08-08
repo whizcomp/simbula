@@ -38,9 +38,9 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to="/" className="nav-link active" aria-current="page">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link">
@@ -49,19 +49,19 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link">
+              <Link to="Places" className="nav-link">
                 {" "}
                 Country Destination
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link">
+              <Link to="/" className="nav-link">
                 {" "}
                 Blog
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link">
+              <Link to="/" className="nav-link">
                 {" "}
                 Contact Us
               </Link>

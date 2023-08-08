@@ -1,23 +1,22 @@
 import React from "react";
 import "./App.css";
-import Hero from "./components/Hero";
-import Countries from "./components/Countries";
-import ClientsSay from "./components/ClientsSay";
-import WhyUs from "./components/WhyUs";
-import OurNumbers from "./components/OurNumbers";
-import Partners from "./components/Partners";
-import Footer from "./components/Footer";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./Home";
+import Places from "./components/Places";
+import About from "./components/About";
 export default function App() {
   return (
     <div>
-      <Hero />
-      <Countries />
-      <ClientsSay />
-      <WhyUs />
-      <OurNumbers />
-      <Partners />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/places" element={<Places />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

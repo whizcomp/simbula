@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 // import "../Style.css";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 280) {
+    if (window.scrollY >= 250) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -12,20 +13,10 @@ export default function Navbar() {
   };
   window.addEventListener("scroll", changeNavbarColor);
   return (
-    // <nav>
-    //   <div
-    //     className="container-fluid"
-    //     style={{ backgroundColor: "transparent" }}
-    //   >
-    //     <a className="logo" href="#">
-    //       Elite consult{" "}
-    //     </a>
-    //   </div>
-    // </nav>
     <nav
       className="navbar fixed-top navbar-expand-lg"
       style={{
-        backgroundColor: colorChange ? "tomato" : "transparent",
+        backgroundColor: colorChange ? "green" : "transparent",
         backdropFilter: "blur(2px)",
       }}
     >
@@ -52,24 +43,28 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/about" className="nav-link">
+                {" "}
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="" className="nav-link">
+                {" "}
                 Country Destination
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="" className="nav-link">
+                {" "}
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="" className="nav-link">
+                {" "}
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
           <span className="navbar-text">

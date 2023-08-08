@@ -91,3 +91,22 @@ content:open-quote
   background-attachment: fixed;
   color:ghostwhite;
 }
+
+
+.image_text{
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  color: #f1f1f1; 
+  width: 100%; /* Full width */
+  padding: 20px;
+}
+.hero_services{
+  background: url('./assets/giraffe.jpg') no-repeat center;
+
+  background-size: cover;
+  height: 530px;
+  position: relative;
+  /* filter: blur(4px); */
+  z-index: -1;
+  color:#0F1A37;
+}

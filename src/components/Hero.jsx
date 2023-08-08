@@ -11,7 +11,6 @@ export default function Hero() {
         className="carousel slide"
         data-bs-ride="carousel"
       >
-        <NavBar />
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src={one} className="img-carousel" alt="..." />

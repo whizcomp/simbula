@@ -4,8 +4,8 @@ import mission from "../assets/mission.png";
 import vision from "../assets/vision.png";
 export default function AboutTemp() {
   return (
-    <div>
-      <div className="container pt-5 mt-5 mb-5" data-aos="slide-up">
+    <div style={{ backgroundColor: "#fce" }}>
+      <div className="container py-5" data-aos="slide-up">
         <div className="row">
           <div className="col-12 col-md-4 d-flex flex-column justify-content-center">
             <img src={about} alt="" width="60" height="60" />

@@ -5,14 +5,14 @@ import { LuVerified } from "react-icons/lu";
 
 export default function WhyUs() {
   return (
-    <div className="py-5">
+    <div className="py-5 tilt">
       <h3
         className="text-center fw-bold py-5 text-capitalize"
         style={{ color: "tomato" }}
       >
         Why You Should Choose Us
       </h3>
-      <div className="d-flex">
+      <div className=" d-flex flex-column flex-md-row ">
         <div className="text-center p-2">
           <PiHandCoinsBold color="gold" size={40} />
           <p className="fs-3 fw-bold pt-1">Affordable Services</p>

@@ -102,11 +102,31 @@ content:open-quote
 }
 .hero_services{
   background: url('./assets/giraffe.jpg') no-repeat center;
-
   background-size: cover;
   height: 530px;
   position: relative;
   /* filter: blur(4px); */
   z-index: -1;
   color:#0F1A37;
+}
+.hero_services_rwanda{
+  background: url('./assets/monkey_baby.jpg') no-repeat center;
+  background-size: cover;
+  height: 530px;
+  position: relative;
+  /* filter: blur(4px); */
+  z-index: -1;
+  color:#0F1A37;
+}
+.tilt{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.my-primary{
+  color:#2A8383
+}
+.header-primary{
+  color:#2f4f4f
 }

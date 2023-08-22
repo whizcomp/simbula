@@ -7,17 +7,17 @@ import CheckMark from "./mycomponents/CheckMark";
 export default function Countries() {
   return (
     <div className="pt-5">
-      <h1 className="fw-light  text-center font-italic text-capitalize">
+      <h3 className="fw-bold  text-center font-italic text-capitalize">
         {" "}
         Countries you can find us
-      </h1>
+      </h3>
       <p className="fw-light text-center py-3 lead ">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
         provident quos blanditiis itaque quibusdam.
       </p>
-      <div className="container">
+      <div className="px-3">
         <div className="d-flex flex-column flex-md-row justify-content-end">
-          <div className=" d-flex me-3  pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
+          <div className=" d-flex me-3  pb-3 flex-column align-items-center p-0 mb-5 shadow bg-body-tertiary rounded">
             <img
               src={mombasa}
               alt=""

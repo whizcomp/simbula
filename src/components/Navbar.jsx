@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav
       className="navbar fixed-top navbar-expand-lg"
       style={{
-        backgroundColor: colorChange ? "green" : "transparent",
+        backgroundColor: colorChange ? "whitesmoke" : "transparent",
         backdropFilter: "blur(2px)",
       }}
     >
@@ -36,22 +36,54 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarText">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-light">
             <li className="nav-item">
               <Link to="/" className="nav-link active" aria-current="page">
                 Home
               </Link>
             </li>
+
+            <li className="nav-item dropdown">
+              <Link
+                to="/places"
+                className="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {" "}
+                Country Destination
+              </Link>
+              <ul
+                className="dropdown-menu"
+                style={{ backgroundColor: "#2f4f4f", color: "wheat" }}
+              >
+                <li className="dropdown-item ">
+                  <Link to="/places/kenya" className="nav-link">
+                    Kenya
+                  </Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/places/rwanda" className="nav-link">
+                    Rwanda
+                  </Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/places" className="nav-link">
+                    Uganda
+                  </Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link to="/places" className="nav-link">
+                    Tanzania
+                  </Link>
+                </li>
+              </ul>
+            </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link">
                 {" "}
                 About Us
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="Places" className="nav-link">
-                {" "}
-                Country Destination
               </Link>
             </li>
             <li className="nav-item">

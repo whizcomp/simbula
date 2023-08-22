@@ -4,8 +4,10 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./Home";
-import Places from "./components/Places";
 import About from "./components/About";
+import Footer from "./components/Footer";
+import Rwanda from "./components/Countries/Rwanda";
+import Kenya from "./components/Countries/Kenya";
 export default function App() {
   return (
     <div>
@@ -13,9 +15,12 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/places" element={<Places />} />
+          <Route path="/places/kenya" element={<Kenya />} />
+          <Route path="/places/rwanda" element={<Rwanda />} />
+
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

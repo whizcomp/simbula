@@ -8,6 +8,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Rwanda from "./components/Countries/Rwanda";
 import Kenya from "./components/Countries/Kenya";
+import Tour from "./components/Tour";
 export default function App() {
   return (
     <div>
@@ -17,7 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/places/kenya" element={<Kenya />} />
           <Route path="/places/rwanda" element={<Rwanda />} />
-
+          <Route path="/tour" element={<Tour />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />

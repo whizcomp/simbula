@@ -130,3 +130,16 @@ content:open-quote
 .header-primary{
   color:#2f4f4f
 }
+.image-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Distribute images evenly along the container */
+  align-items: center; /* Align images vertically in the center */
+  max-width: 100%; /* Limit container to screen width */
+  
+}
+
+.gallery-image {
+  height:200px;
+  width: 300px;
+  margin-right: 12px;
+}

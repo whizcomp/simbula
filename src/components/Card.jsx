@@ -1,5 +1,7 @@
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 export default function Card({ img, title, desc, country = "Kenya" }) {
   return (
     <div
@@ -8,7 +10,9 @@ export default function Card({ img, title, desc, country = "Kenya" }) {
     >
       <img src={img} alt="" className="img-fluid" width="400" height="500" />
       <div className="p-3">
-        <p className="pt-3 fw-bolder fs-4 header-primary ">{title}</p>
+        <Link to="/tour" className="pt-3 fw-bolder fs-4 header-primary ">
+          {title}
+        </Link>
         <div className="pb-2">
           <IoLocationOutline />{" "}
           <span className="my-primary fw-semibold">{country}</span>

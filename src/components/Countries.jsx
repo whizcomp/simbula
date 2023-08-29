@@ -35,7 +35,9 @@ export default function Countries() {
 
               <CheckMark title="Mombasa beach" />
             </div>
-            <button className="btn btn-outline-secondary mt-3">View All</button>
+            <Link to="/places/kenya" className="btn btn-outline-secondary mt-3">
+              View All
+            </Link>
           </div>
 
           <div className=" d-flex  me-2 pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
@@ -50,7 +52,12 @@ export default function Countries() {
 
               <CheckMark title="Mombasa beach" />
             </div>
-            <button className="btn btn-outline-secondary mt-3">View All</button>
+            <Link
+              to="/places/uganda"
+              className="btn btn-outline-secondary mt-3"
+            >
+              View All
+            </Link>
           </div>
           <div className=" d-flex me-2 pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
             <img src={rwanda} alt="" className="img-fluid" width="400" />
@@ -64,7 +71,12 @@ export default function Countries() {
 
               <CheckMark title="Mombasa beach" />
             </div>
-            <button className="btn btn-outline-secondary mt-3">View All</button>
+            <Link
+              to="/places/rwanda"
+              className="btn btn-outline-secondary mt-3"
+            >
+              View All
+            </Link>
           </div>
           <div className=" d-flex me-2  pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
             <img
@@ -84,7 +96,12 @@ export default function Countries() {
 
               <CheckMark title="Mombasa beach" />
             </div>
-            <button className="btn btn-outline-secondary mt-3">View All</button>
+            <Link
+              to="/places/tanzania"
+              className="btn btn-outline-secondary mt-3"
+            >
+              View All
+            </Link>
           </div>
         </div>
       </div>

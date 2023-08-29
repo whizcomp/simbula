@@ -1,17 +1,21 @@
 import React from "react";
-import flamingo from "../../assets/flamingo.jpeg";
-import wildbeast from "../../assets/wildbeests.jpg";
+import murchison from "../../assets/muurchison.jpg";
+import gorilla from "../../assets/gorilla.jpg";
 import elephant from "../../assets/elephant.jpg";
 import nyali from "../../assets/nyali.jpg";
 import nai from "../../assets/nai.jpg";
 import wildlife from "../../assets/tanz.jpeg";
-// import safaris from "../../assets/tourism_car.jpg";
+import flamingo from "../../assets/flamingo.jpeg";
+import wildbeast from "../../assets/wildbeests.jpg";
 import maasai from "../../assets/maasai.jpg";
 import mountain from "../../assets/mountain.jpg";
-
+import leopard from "../../assets/leopard.jpg";
+import falls from "../../assets/sipi.jpg";
+import birds from "../../assets/bird_fly.jpg";
+import gamedrive from "../../assets/safaris.jpg";
 import Card from "../Card";
 
-export default function KenyanTabs() {
+export default function UgandaTabs() {
   return (
     <div className="">
       <nav>
@@ -40,18 +44,6 @@ export default function KenyanTabs() {
           >
             Tourism
           </button>
-          <button
-            className="nav-link"
-            id="nav-contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-contact"
-            type="button"
-            role="tab"
-            aria-controls="nav-contact"
-            aria-selected="false"
-          >
-            Accomodation
-          </button>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
@@ -67,14 +59,15 @@ export default function KenyanTabs() {
               className="text-center fw-bold pt-4 pb-2 "
               style={{ color: "darkslategrey" }}
             >
-              About Kenya
+              About Uganda
             </h2>
             <p className="text-center pty-3">
-              The people of Kenya are known for their friendly and welcoming
-              nature. The official language is Swahili, but English is also
-              widely spoken. The currency is the Kenyan shilling. Kenya is an
-              East African country known for its wildlife, including the Big
-              Five (lions, leopards, elephants, rhinos, and buffaloes).
+              Uganda is a landlocked country in East Africa. It is known for its
+              stunning scenery, abundant wildlife, and diverse cultures. The
+              people of Uganda are known for their hospitality and warmth. The
+              official language is English, but there are also over 40 other
+              languages spoken in the country. The currency is the Ugandan
+              shilling
             </p>
           </div>
           <div className="">
@@ -83,34 +76,34 @@ export default function KenyanTabs() {
                 className="text-center fw-bold pt-4 pb-3 "
                 style={{ color: "darkslategrey" }}
               >
-                Popular places in Kenya
+                Popular places in Uganda
               </h3>
             </div>
             <div className="container-fluid px-2">
               <div className="d-flex flex-column flex-md-row justify-content-center">
                 <Card
-                  link="/tour/kenya-tanzania"
-                  img={wildbeast}
-                  title="Maasai mara"
-                  desc="This reserve is home to a large population of lions, elephants, and other animals. Visitors can go on game drives to see the animals in their natural habitat."
+                  img={gorilla}
+                  country="Uganda"
+                  title="Bwindi Impenetrable Park"
+                  desc="The Bwindi Impenetrable National Park (BINP) is in southwestern Uganda. The park is known for colobus monkeys, chimpanzees, and many birds such as hornbills and turacos."
                 />
                 <Card
-                  img={flamingo}
-                  link="/tour/kenya-tanzania"
-                  title="Lake Nakuru Park"
-                  desc="This park is known for its flocks of flamingos. Visitors can also see zebras, lions, and other animals in the park."
+                  img={murchison}
+                  country="Uganda"
+                  title="Murchison National Park"
+                  desc="Murchison park is known for Murchison Falls, where the Victoria Nile River surges through a narrow gap over a massive drop. Park wildlife includes elephants and hippos, and there are chimpanzees"
                 />
                 <Card
-                  img={nai}
-                  link="/tour/kenya-uganda"
-                  title="Nairobi City"
-                  desc="Nairobi is on its own a tourist attraction not only form its beautiful scenes but also it's the only city with a national park at the capital city"
+                  img={leopard}
+                  title="Queen Elizabeth National Park"
+                  country="Uganda"
+                  desc="Queen Elizabeth National Park is the most popular savanna park in Uganda and the best place to see lions including the Tree Climbing lions making it the perfect destination for a Uganda Wildlife Safari."
                 />
                 <Card
-                  img={nyali}
-                  link="/tour/kenya-tanzania"
-                  title="Mombasa beaches"
-                  desc="This coastal city is a popular destination for beach relaxation. Visitors can also visit the Old Town, a UNESCO World Heritage Site."
+                  img={falls}
+                  title="Sipi Falls"
+                  country="Uganda"
+                  desc="Sipi Falls is a series of three waterfalls found at the foothills of Mount Elgon in Uganda, just at the edge of Mount Elgon National Park."
                 />
               </div>
             </div>
@@ -129,27 +122,27 @@ export default function KenyanTabs() {
               <div className="container-fluid d-flex flex-column flex-md-row">
                 <Card
                   img={wildlife}
-                  link="/tour/kenya-tanzania"
+                  country="Uganda"
                   title="Wildlife Viewing"
-                  desc="Kenya is a home to wildlife like the big five, the wildeests, beautiful beaches at it's coast and many mout"
+                  desc="Uganda has got several parks like Queen Elizabeth National Park,Murchison and many more. Uganda is home to many wildlife like lions, elephants giraffe and many more. It is also famous for gorilla attraction."
                 />
                 <Card
                   img={mountain}
-                  link="/tour/kenya-uganda"
                   title="Mountain Climbing"
-                  desc="Mount Kenya is the highest mountain in Kenya and the second highest in Africa. It is a popular destination for mountain climbers of all levels. other mountains you can visit are Mount Elgon, Aberdare Range, Kinangop Highlands and many more"
+                  country="Uganda"
+                  desc="Mountain Climbing adventure in places like Rwenzori Mountains, Virunga Volcanoes, and Mount Elgon is an activity you shouldn't miss out on"
                 />
                 <Card
-                  img={nyali}
-                  title="Mombasa beaches"
-                  link="/tour/kenya-uganda"
-                  desc="Diani Beach is one of the most popular beaches in Mombasa. It is located on the south coast of Mombasa and is known for its white sand, clear waters, and palm trees. Diani Beach is a popular destination for swimming, sunbathing, and water sports. other beaches are nyali beach, Tiwi beach, Shelly beach."
+                  img={birds}
+                  title="Bird watching"
+                  country="Uganda"
+                  desc="Ther are more than 10 bird watching destinations in uganda you can visit for bird watching."
                 />
                 <Card
-                  img={maasai}
-                  title="Cultural tours"
-                  link="/tour/kenya-tanzania"
-                  desc="Kenya is known for the maasai cultural tours near the maasai mara national park. "
+                  img={gamedrive}
+                  title="Game drive"
+                  country="Uganda"
+                  desc="Game drive through the best parks like Kidepo Valley National Park,Lake Mburo National Park, Queen Elizabeth National Park and many more. "
                 />
               </div>
             </div>
@@ -192,7 +185,7 @@ export default function KenyanTabs() {
           <div className="container-fluid pt-3">
             <div className="d-flex flex-wrap">
               <Card
-                img={wildbeast}
+                img={wildlife}
                 title="Maasai mara"
                 desc="This reserve is home to a large population of lions, elephants, and other animals. Visitors can go on game drives to see the animals in their natural habitat."
               />

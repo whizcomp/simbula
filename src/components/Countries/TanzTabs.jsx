@@ -1,17 +1,22 @@
 import React from "react";
+import kigali from "../../assets/rwanda.jpg";
+import kivu from "../../assets/kivu_cropped.jpg";
 import flamingo from "../../assets/flamingo.jpeg";
 import wildbeast from "../../assets/wildbeests.jpg";
 import elephant from "../../assets/elephant.jpg";
 import nyali from "../../assets/nyali.jpg";
-import nai from "../../assets/nai.jpg";
-import wildlife from "../../assets/tanz.jpeg";
-// import safaris from "../../assets/tourism_car.jpg";
-import maasai from "../../assets/maasai.jpg";
+import gamedrive from "../../assets/game_drive.jpg";
+import culture from "../../assets/rwanda_culture.png";
 import mountain from "../../assets/mountain.jpg";
-
+import akagera from "../../assets/akagera.jpg";
+import birds from "../../assets/birds.jpg";
+import monk from "../../assets/monk.jpg";
+import zebras from "../../assets/zebras2.jpg";
+import zanzibar from "../../assets/zanzibar.jpg";
+import coastal from "../../assets/coastal.jpg";
 import Card from "../Card";
 
-export default function KenyanTabs() {
+export default function TanzTabs() {
   return (
     <div className="">
       <nav>
@@ -40,18 +45,6 @@ export default function KenyanTabs() {
           >
             Tourism
           </button>
-          <button
-            className="nav-link"
-            id="nav-contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-contact"
-            type="button"
-            role="tab"
-            aria-controls="nav-contact"
-            aria-selected="false"
-          >
-            Accomodation
-          </button>
         </div>
       </nav>
       <div className="tab-content" id="nav-tabContent">
@@ -67,14 +60,14 @@ export default function KenyanTabs() {
               className="text-center fw-bold pt-4 pb-2 "
               style={{ color: "darkslategrey" }}
             >
-              About Kenya
+              About Tanzania
             </h2>
             <p className="text-center pty-3">
-              The people of Kenya are known for their friendly and welcoming
-              nature. The official language is Swahili, but English is also
-              widely spoken. The currency is the Kenyan shilling. Kenya is an
-              East African country known for its wildlife, including the Big
-              Five (lions, leopards, elephants, rhinos, and buffaloes).
+              Tanzania is an East African country known for its vast savannahs,
+              the Serengeti National Park, and the annual migration of
+              wildebeest and zebras. The people of Tanzania are known for their
+              warm hospitality. The official language is Swahili, but English is
+              also widely spoken. The currency is the Tanzanian shilling.
             </p>
           </div>
           <div className="">
@@ -83,34 +76,28 @@ export default function KenyanTabs() {
                 className="text-center fw-bold pt-4 pb-3 "
                 style={{ color: "darkslategrey" }}
               >
-                Popular places in Kenya
+                Popular places in Tanzania
               </h3>
             </div>
             <div className="container-fluid px-2">
               <div className="d-flex flex-column flex-md-row justify-content-center">
                 <Card
-                  link="/tour/kenya-tanzania"
-                  img={wildbeast}
-                  title="Maasai mara"
-                  desc="This reserve is home to a large population of lions, elephants, and other animals. Visitors can go on game drives to see the animals in their natural habitat."
+                  img={zebras}
+                  title="Ngorongoro Crater"
+                  country="Tanzania"
+                  desc="The Ngorongoro Crater is a UNESCO World Heritage Site located in the Ngorongoro Conservation Area in Tanzania. It is the world's largest intact volcanic caldera.  The crater floor is home to a diverse array of wildlife, including lions, elephants, black rhinoceroses, zebras, wildebeests, and many more."
                 />
                 <Card
                   img={flamingo}
-                  link="/tour/kenya-tanzania"
-                  title="Lake Nakuru Park"
-                  desc="This park is known for its flocks of flamingos. Visitors can also see zebras, lions, and other animals in the park."
+                  title="Lake Manyara National Park"
+                  country="Tanzania"
+                  desc="Lake Manyara National Park is a popular tourist destination in Tanzania, known for its diverse wildlife, beautiful scenery, and bird watching."
                 />
                 <Card
-                  img={nai}
-                  link="/tour/kenya-uganda"
-                  title="Nairobi City"
-                  desc="Nairobi is on its own a tourist attraction not only form its beautiful scenes but also it's the only city with a national park at the capital city"
-                />
-                <Card
-                  img={nyali}
-                  link="/tour/kenya-tanzania"
-                  title="Mombasa beaches"
-                  desc="This coastal city is a popular destination for beach relaxation. Visitors can also visit the Old Town, a UNESCO World Heritage Site."
+                  img={zanzibar}
+                  country="Tanzania"
+                  title="Zanzibar island"
+                  desc="Zanzibar is known for its beautiful beaches, spices, and historic Stone Town."
                 />
               </div>
             </div>
@@ -128,59 +115,32 @@ export default function KenyanTabs() {
               </h3>
               <div className="container-fluid d-flex flex-column flex-md-row">
                 <Card
-                  img={wildlife}
-                  link="/tour/kenya-tanzania"
-                  title="Wildlife Viewing"
-                  desc="Kenya is a home to wildlife like the big five, the wildeests, beautiful beaches at it's coast and many mout"
+                  img={zanzibar}
+                  title="wildlife"
+                  country="Tanzania"
+                  desc="Tanzania is a home to wildlife like the big five at serengeti, the wildeests, beautiful beaches at it's coast like zanzibar and many more."
                 />
                 <Card
                   img={mountain}
-                  link="/tour/kenya-uganda"
                   title="Mountain Climbing"
-                  desc="Mount Kenya is the highest mountain in Kenya and the second highest in Africa. It is a popular destination for mountain climbers of all levels. other mountains you can visit are Mount Elgon, Aberdare Range, Kinangop Highlands and many more"
+                  country="Tanzania"
+                  desc="Mountain climbing in places like Mount kilimanjaro,the highest mountain in Africa, and Mount Meru,Mount Rungwe and many more others."
                 />
                 <Card
-                  img={nyali}
-                  title="Mombasa beaches"
-                  link="/tour/kenya-uganda"
-                  desc="Diani Beach is one of the most popular beaches in Mombasa. It is located on the south coast of Mombasa and is known for its white sand, clear waters, and palm trees. Diani Beach is a popular destination for swimming, sunbathing, and water sports. other beaches are nyali beach, Tiwi beach, Shelly beach."
+                  img={gamedrive}
+                  title="Safaris"
+                  country="Tanzania"
+                  desc="Have fun during the drive through natural wildlife habitats, such as national parks, game reserves, or wildlife conservancies, to observe and enjoy the diverse animal and bird species that inhabit the area."
                 />
                 <Card
-                  img={maasai}
-                  title="Cultural tours"
-                  link="/tour/kenya-tanzania"
-                  desc="Kenya is known for the maasai cultural tours near the maasai mara national park. "
+                  img={coastal}
+                  title="Beach holidays"
+                  country="Tanzania"
+                  desc="Tanzania has the best beaches from zanzibar island to Nungwi Beach,Prison island to name a few."
                 />
               </div>
             </div>
           </div>
-          {/* <div className="container-fluid px-2">
-            <div className="">
-              <h3
-                className="text-center fw-bold pt-4 pb-3 "
-                style={{ color: "darkslategrey" }}
-              >
-                Popular National Parks in Kenya
-              </h3>
-              <div className="container-fluid d-flex flex-column flex-md-row">
-                <Card
-                  img={wildbeast}
-                  title="Maasai mara"
-                  desc="This reserve is home to a large population of lions, elephants, and other animals. Visitors can go on game drives to see the animals in their natural habitat."
-                />
-                <Card
-                  img={flamingo}
-                  title="Lake Nakuru Park"
-                  desc="This park is known for its flocks of flamingos. Visitors can also see zebras, lions, and other animals in the park."
-                />
-                <Card
-                  img={elephant}
-                  title="Kilimanjaro National Park"
-                  desc="This park is home to Mount Kilimanjaro, the tallest mountain in Africa. Visitors can hike to the summit of the mountain, or take a scenic flight over the park. "
-                />
-              </div>
-            </div>
-          </div> */}
         </div>
         <div
           className="tab-pane fade"

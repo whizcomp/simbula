@@ -6,7 +6,7 @@ import wildbeast from "../../assets/wildbeests.jpg";
 import elephant from "../../assets/elephant.jpg";
 import nyali from "../../assets/nyali.jpg";
 import gamedrive from "../../assets/game_drive.jpg";
-import maasai from "../../assets/maasai.jpg";
+import culture from "../../assets/rwanda_culture.png";
 import mountain from "../../assets/mountain.jpg";
 import akagera from "../../assets/akagera.jpg";
 import birds from "../../assets/birds.jpg";
@@ -41,18 +41,6 @@ export default function RwandaTabs() {
             aria-selected="false"
           >
             Tourism
-          </button>
-          <button
-            className="nav-link"
-            id="nav-contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-contact"
-            type="button"
-            role="tab"
-            aria-controls="nav-contact"
-            aria-selected="false"
-          >
-            Accomodation
           </button>
         </div>
       </nav>
@@ -92,12 +80,14 @@ export default function RwandaTabs() {
               <div className="d-flex flex-column flex-md-row justify-content-center">
                 <Card
                   img={kigali}
+                  link="/tour/rwanda-uganda"
                   title="Kigali"
                   country="Rwanda"
                   desc="Kigali has stunning architecture from different eras, making the city look diverse. From the elegantly designed stonework to historic buildings and rambling gardens, Kigali is a must-visit destination."
                 />
                 <Card
                   img={kivu}
+                  link="/tour/rwanda-uganda"
                   title="Lake Kivu"
                   country="Rwanda"
                   desc="Lake Kivu is one of the African Great Lakes. It lies on the border between the Democratic Republic of the Congo and Rwanda, and is in the Albertine Rift, the western branch of the East African Rift"
@@ -105,6 +95,7 @@ export default function RwandaTabs() {
                 <Card
                   img={akagera}
                   country="Rwanda"
+                  link="/tour/rwanda-uganda"
                   title="Akagera National Park "
                   desc="Akagera National Park lies in eastern Rwanda, hugging the border with Tanzania. It's characterized by woodland, swamps, low mountains and savannah."
                 />
@@ -127,25 +118,29 @@ export default function RwandaTabs() {
                   img={monk}
                   title="Gorilla trecking"
                   country="Rwanda"
+                  link="/tour/rwanda-uganda"
                   desc="Gorilla trekking in Rwanda is a popular and exciting activity that allows visitors to come up close to endangered mountain gorillas in their natural habitat."
                 />
                 <Card
-                  img={birds}
+                  img={mountain}
                   title="Mountain Climbing"
                   country="Rwanda"
-                  desc="This coastal city is a popular destination for beach relaxation. Visitors can also visit the Old Town, a UNESCO World Heritage Site."
+                  link="/tour/rwanda-uganda"
+                  desc="Mountain climbing in places like Mount Karisimbi (4,507 meters),Mount Muhabura (4,127 meters), Mount Bisoke (3,711 meters), Mount Sabyinyo (3,674 meters), and Mount Gahinga (3,474 meters). These mountains are popular for hiking and offer stunning views of the surrounding countryside. "
                 />
                 <Card
                   img={gamedrive}
                   title="Game drive"
                   country="Rwanda"
+                  link="/tour/rwanda-uganda"
                   desc="Have fun during the drive through natural wildlife habitats, such as national parks, game reserves, or wildlife conservancies, to observe and enjoy the diverse animal and bird species that inhabit the area."
                 />
                 <Card
-                  img={maasai}
+                  img={culture}
                   title="Cultural tours"
                   country="Rwanda"
-                  desc="This coastal city is a popular destination for beach relaxation. Visitors can also visit the Old Town, a UNESCO World Heritage Site."
+                  link="/tour/rwanda-uganda"
+                  desc="Get to view Rwanda traditional cultures like Iby'iwacu Cultural Village, Kigali Genocide Memorial and many more"
                 />
               </div>
             </div>

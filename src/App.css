@@ -118,6 +118,24 @@ content:open-quote
   z-index: -1;
   color:#0F1A37;
 }
+.hero_services_uganda{
+  background: url('./assets/chimpanzees.jpg') no-repeat center;
+  background-size: cover;
+  height: 530px;
+  position: relative;
+  /* filter: blur(4px); */
+  z-index: -1;
+  color:#0F1A37;
+}
+.hero_services_tanz{
+  background: url('./assets/zebra.jpg') no-repeat center;
+  background-size: cover;
+  height: 530px;
+  position: relative;
+  /* filter: blur(4px); */
+  z-index: -1;
+  color:#0F1A37;
+}
 .tilt{
   clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 250) {
+    if (window.scrollY >= 150) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -69,16 +69,22 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="dropdown-item">
-                  <Link to="/places" className="nav-link">
+                  <Link to="/places/uganda" className="nav-link">
                     Uganda
                   </Link>
                 </li>
                 <li className="dropdown-item">
-                  <Link to="/places" className="nav-link">
+                  <Link to="/places/tanz" className="nav-link">
                     Tanzania
                   </Link>
                 </li>
               </ul>
+            </li>
+            <li className="nav-item">
+              <Link to="/packages" className="nav-link">
+                {" "}
+                Our Simbula Safaris
+              </Link>
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link">

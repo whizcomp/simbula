@@ -4,6 +4,7 @@ import tanz from "../assets/giraffe.jpeg";
 import flamingo from "../assets/flamingo.jpeg";
 import rwanda from "../assets/rwanda.jpeg";
 import CheckMark from "./mycomponents/CheckMark";
+import { Link } from "react-router-dom";
 export default function Countries() {
   return (
     <div className="pt-5">

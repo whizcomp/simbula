@@ -9,12 +9,7 @@ export default function Packages() {
   return (
     <div className="container mt-5">
       <h1 className="text-center py-3 pt-4">Our Packages</h1>
-      <p className="fs-5 fw-bold text-bright">
-        Our travel packages can be customized to meet your specific needs and
-        preferences. We offer a wide range of options, so you can travel the way
-        you want. Please contact us to learn more and we will be happy to help
-        you plan your perfect trip.{" "}
-      </p>
+
       <div className="">
         <CardHorizontal
           img={monkey}

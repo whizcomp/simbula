@@ -42,7 +42,7 @@ export default function KenyanTabs() {
       <div className="container">
         <div className="container">
           <div className="row">
-            <div className="col-8">
+            <div className="col-12 col-md-8">
               <h2
                 className="text-center fw-bold pt-4 pb-2 "
                 style={{ color: "darkslategrey" }}
@@ -68,7 +68,7 @@ export default function KenyanTabs() {
                 ))}
               </div>
             </div>
-            <div className="col-4 ">
+            <div className="col-12 col-md-4 ">
               <div className="py-5">
                 <h4
                   className="text-center fw-bold"
@@ -78,16 +78,16 @@ export default function KenyanTabs() {
                 </h4>
                 <div className="">
                   <ul className="list-group list-group-flush">
-                    <Link className="list-group-item">
+                    <Link to="/tour/kenya-uganda" className="list-group-item">
                       Trekking Uganda's Gorillas and Kenya's Big Five (7 days)
                     </Link>
-                    <Link className="list-group-item">
+                    <Link to="/tour/kenya-tanzania" className="list-group-item">
                       The Great Rift Valley Explorer (8 days)
                     </Link>
-                    <Link className="list-group-item">
+                    <Link to="/tour/kenya-beach" className="list-group-item">
                       Kenya Beach Escape (7 days)
                     </Link>
-                    <Link className="list-group-item">
+                    <Link to="/tour/east-africa" className="list-group-item">
                       East Africa's Ultimate Wildlife Combo (14 days)
                     </Link>
                   </ul>

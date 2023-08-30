@@ -1,8 +1,8 @@
 import React from "react";
-import mombasa from "../assets/mombasa.jpg";
-import tanz from "../assets/giraffe.jpeg";
-import flamingo from "../assets/flamingo.jpeg";
-import rwanda from "../assets/rwanda.jpeg";
+import mombasa from "../assets/wildbeests.jpg";
+import tanz from "../assets/baby_ele.jpg";
+import flamingo from "../assets/gorilla2.jpg";
+import rwanda from "../assets/akagera.jpg";
 import CheckMark from "./mycomponents/CheckMark";
 import { Link } from "react-router-dom";
 export default function Countries() {
@@ -13,8 +13,7 @@ export default function Countries() {
         Countries you can find us
       </h3>
       <p className="fw-light text-center py-3 lead ">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
-        provident quos blanditiis itaque quibusdam.
+        We are available in four countries in East Africa
       </p>
       <div className="px-3">
         <div className="d-flex flex-column flex-md-row justify-content-end">
@@ -48,10 +47,10 @@ export default function Countries() {
               Uganda
             </p>
             <div className="">
-              <CheckMark title="Maasai Mara" />
-              <CheckMark title="Amboseli" />
+              <CheckMark title="Bwindi Impenetrable National Park," />
+              <CheckMark title="Murchison Falls National Park" />
 
-              <CheckMark title="Mombasa beach" />
+              <CheckMark title="Queen Elizabeth National Park" />
             </div>
             <Link
               to="/places/uganda"
@@ -67,10 +66,10 @@ export default function Countries() {
               Rwanda
             </p>
             <div className="">
-              <CheckMark title="Maasai Mara" />
-              <CheckMark title="Amboseli" />
+              <CheckMark title="Lake Kivu" />
+              <CheckMark title="Akagera National Park" />
 
-              <CheckMark title="Mombasa beach" />
+              <CheckMark title="Kigali massacre memorial" />
             </div>
             <Link
               to="/places/rwanda"
@@ -83,7 +82,7 @@ export default function Countries() {
             <img
               src={tanz}
               alt=""
-              className="img-fluid img-zoom"
+              className="img-fluid"
               width="400"
               height="500"
             />
@@ -92,10 +91,10 @@ export default function Countries() {
               Tanzania
             </p>
             <div className="">
-              <CheckMark title="Maasai Mara" />
-              <CheckMark title="Amboseli" />
+              <CheckMark title="Ngorongoro Crater" />
+              <CheckMark title="Tarangire National Park" />
 
-              <CheckMark title="Mombasa beach" />
+              <CheckMark title="Zanzibar island" />
             </div>
             <Link
               to="/places/tanzania"

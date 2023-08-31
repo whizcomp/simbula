@@ -19,14 +19,6 @@ export default function Home() {
       <ClientsSay />
       <OurNumbers />
       <Partners />
-      <div className="position-fixed bottom-0 right-0 p-5 m-3">
-        <Link to="">
-          <IoLogoWhatsapp
-            size="55"
-            style={{ padding: "2px", color: "#25D366" }}
-          />
-        </Link>
-      </div>
     </>
   );
 }

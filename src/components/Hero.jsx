@@ -1,6 +1,6 @@
 import React from "react";
 import three from "../assets/giraffe.jpg";
-import one from "../assets/simba.jpg";
+import one from "../assets/simba.webp";
 import two from "../assets/monkeys.jpg";
 import NavBar from "./Navbar";
 export default function Hero() {

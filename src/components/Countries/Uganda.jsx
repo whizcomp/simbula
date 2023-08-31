@@ -6,7 +6,7 @@ export default function Uganda() {
     <div className="">
       <div className="hero_services_uganda  d-flex flex-column justify-content-center align-items-center ">
         <h1 className="display-3 fw-bold text-center image_text">
-          Tour Uganda
+          Tour Ugandas
         </h1>
       </div>
       <UgandaTabs />

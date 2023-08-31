@@ -3,7 +3,6 @@ import AboutTemp from "./AboutTemp";
 import TwoGrid from "./mycomponents/TwoGrid";
 import giraffe from "../assets/giraffe.jpg";
 import WhyUs from "./WhyUs";
-import Footer from "./Footer";
 import ClientsSay from "./ClientsSay";
 export default function About() {
   const details =
@@ -17,7 +16,6 @@ export default function About() {
       <TwoGrid details={details} image={giraffe} />
       <WhyUs />
       <ClientsSay />
-      <Footer />
     </div>
   );
 }

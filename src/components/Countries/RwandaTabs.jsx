@@ -1,238 +1,105 @@
 import React from "react";
-import kigali from "../../assets/rwanda.jpg";
-import kivu from "../../assets/kivu_cropped.jpg";
-import flamingo from "../../assets/flamingo.jpeg";
-import wildbeast from "../../assets/wildbeests.jpg";
-import elephant from "../../assets/elephant.jpg";
-import nyali from "../../assets/nyali.jpg";
-import gamedrive from "../../assets/game_drive.jpg";
-import culture from "../../assets/rwanda_culture.png";
-import mountain from "../../assets/mountain.jpg";
-import akagera from "../../assets/akagera.jpg";
-import birds from "../../assets/birds.jpg";
-import monk from "../../assets/monk.jpg";
+import List from "./List";
+import { Link } from "react-router-dom";
 
-import Card from "../Card";
 export default function RwandaTabs() {
+  const list = [
+    {
+      title:
+        "Trek through lush rainforests to encounter rare mountain gorillas in their natural habitat. Rwanda is home to over 300 gorillas, nearly half of the world's remaining population. Gorilla trekking is a life-changing experience and the highlight of any Rwanda safari.",
+    },
+    {
+      title:
+        "Spot golden monkeys, buffaloes, and over 700 bird species in the secluded Nyungwe Forest National Park. It is one of the oldest rainforests in Africa with stunning waterfalls and hiking trails.",
+    },
+    {
+      title:
+        "Discover Akagera National Park, home to lions, rhinos, elephants, and the largest protected wetland in central Africa. Akagera offers a classic big game safari experience against a backdrop of scenic hills.",
+    },
+    {
+      title:
+        "Explore the vibrant capital city of Kigali, with a burgeoning food scene, cultural attractions, and a moving genocide memorial. Kigali is one of the cleanest, greenest and safest cities in Africa.",
+    },
+    {
+      title:
+        "Relax on the shores of Lake Kivu, a scenic inland sea surrounded by mountains and green hills. We offer luxury beach getaways and lake cruises with stunning views.",
+    },
+    {
+      title:
+        "Experience the unique culture of Rwanda's complex history. We offer tours of traditional villages, king's palaces, and the National Museum of Rwanda.",
+    },
+    {
+      title:
+        "Stay in world-class eco-lodges and luxury tented camps with breathtaking views of Rwanda's hills and forests. The level of service and comfort rivals any destination in East Africa.",
+    },
+  ];
   return (
     <div className="">
-      <nav>
-        <div className="nav nav-tabs" id="nav-tab" role="tablist">
-          <button
-            className="nav-link active"
-            id="nav-home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-home"
-            type="button"
-            role="tab"
-            aria-controls="nav-home"
-            aria-selected="true"
-          >
-            Overview
-          </button>
-          <button
-            className="nav-link"
-            id="nav-profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-profile"
-            type="button"
-            role="tab"
-            aria-controls="nav-profile"
-            aria-selected="false"
-          >
-            Tourism
-          </button>
-        </div>
-      </nav>
-      <div className="tab-content" id="nav-tabContent">
-        <div
-          className="tab-pane fade show active"
-          id="nav-home"
-          role="tabpanel"
-          aria-labelledby="nav-home-tab"
-          tabindex="0"
-        >
-          <div className="container">
-            <h2
-              className="text-center fw-bold pt-4 pb-2 "
-              style={{ color: "darkslategrey" }}
-            >
-              About Rwanda
-            </h2>
-            <p className="text-center pty-3">
-              Rwanda is a landlocked country in East Africa. It is known for its
-              beautiful scenery, including the Nyungwe Forest and the Volcanoes
-              National Park.The people of Rwanda are known for their resilience
-              and determination. The official language is Kinyarwanda, but
-              English is also widely spoken. The currency is the Rwandan franc.
-            </p>
-          </div>
-          <div className="">
-            <div className="">
+      <div className="container">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-8">
+              <h2
+                className="text-center fw-bold pt-4 pb-2 "
+                style={{ color: "darkslategrey" }}
+              >
+                About Rwanda
+              </h2>
+              <p className="text-center pty-3">
+                Rwanda is a scenic East African country known for its dramatic
+                hills and valleys, unique wildlife, and vibrant culture. Over
+                the past 8 years, Simbula Safaris has crafted luxury gorilla
+                trekking safaris and bespoke tours in Rwanda tailored to the
+                interests of discerning travelers. Our expertise allows us to
+                share the very best of Rwanda with you.
+              </p>
               <h3
                 className="text-center fw-bold pt-4 pb-3 "
                 style={{ color: "darkslategrey" }}
               >
-                Popular places in Rwanda
+                what you will experience in Rwanda
               </h3>
-            </div>
-            <div className="container-fluid px-2">
-              <div className="d-flex flex-column flex-md-row justify-content-center">
-                <Card
-                  img={kigali}
-                  link="/tour/rwanda-uganda"
-                  title="Kigali"
-                  country="Rwanda"
-                  desc="Kigali has stunning architecture from different eras, making the city look diverse. From the elegantly designed stonework to historic buildings and rambling gardens, Kigali is a must-visit destination."
-                />
-                <Card
-                  img={kivu}
-                  link="/tour/rwanda-uganda"
-                  title="Lake Kivu"
-                  country="Rwanda"
-                  desc="Lake Kivu is one of the African Great Lakes. It lies on the border between the Democratic Republic of the Congo and Rwanda, and is in the Albertine Rift, the western branch of the East African Rift"
-                />
-                <Card
-                  img={akagera}
-                  country="Rwanda"
-                  link="/tour/rwanda-uganda"
-                  title="Akagera National Park "
-                  desc="Akagera National Park lies in eastern Rwanda, hugging the border with Tanzania. It's characterized by woodland, swamps, low mountains and savannah."
-                />
+              <div className="">
+                {list.map((list) => (
+                  <List text={list.title} />
+                ))}
+                <p className="fw-bold">
+                  A safari in Rwanda is a transformative experience. Let Simbula
+                  Safaris craft your perfect gorilla trekking adventure and show
+                  you the best of the Land of a Thousand Hills. Our journeys
+                  give back to conservation and communities, allowing you to
+                  discover Rwanda's beauty while making a positive impact. The
+                  hills await - let your journey begin!
+                </p>
               </div>
             </div>
-          </div>
-          <div
-            className="container-fluid px-2 mt-5"
-            style={{ backgroundColor: "lightgrey" }}
-          >
-            <div className="">
-              <h3
-                className="text-center fw-bold pt-5 pb-3 "
-                style={{ color: "darkslategrey" }}
-              >
-                Popular tourism activities
-              </h3>
-              <div className="container-fluid d-flex flex-column flex-md-row">
-                <Card
-                  img={monk}
-                  title="Gorilla trecking"
-                  country="Rwanda"
-                  link="/tour/rwanda-uganda"
-                  desc="Gorilla trekking in Rwanda is a popular and exciting activity that allows visitors to come up close to endangered mountain gorillas in their natural habitat."
-                />
-                <Card
-                  img={mountain}
-                  title="Mountain Climbing"
-                  country="Rwanda"
-                  link="/tour/rwanda-uganda"
-                  desc="Mountain climbing in places like Mount Karisimbi (4,507 meters),Mount Muhabura (4,127 meters), Mount Bisoke (3,711 meters), Mount Sabyinyo (3,674 meters), and Mount Gahinga (3,474 meters). These mountains are popular for hiking and offer stunning views of the surrounding countryside. "
-                />
-                <Card
-                  img={gamedrive}
-                  title="Game drive"
-                  country="Rwanda"
-                  link="/tour/rwanda-uganda"
-                  desc="Have fun during the drive through natural wildlife habitats, such as national parks, game reserves, or wildlife conservancies, to observe and enjoy the diverse animal and bird species that inhabit the area."
-                />
-                <Card
-                  img={culture}
-                  title="Cultural tours"
-                  country="Rwanda"
-                  link="/tour/rwanda-uganda"
-                  desc="Get to view Rwanda traditional cultures like Iby'iwacu Cultural Village, Kigali Genocide Memorial and many more"
-                />
+            <div className="col-12 col-md-4 ">
+              <div className="py-5">
+                <h4
+                  className="text-center fw-bold"
+                  style={{ color: "darkslategrey" }}
+                >
+                  Rwanda Packages
+                </h4>
+                <div className="container">
+                  <ul className="list-group list-group-flush">
+                    <Link to="/tour/kenya-tanzania" className="list-group-item">
+                      Primates of the Virunga (7 days)
+                    </Link>
+
+                    <Link to="/tour/east-africa" className="list-group-item">
+                      East Africa's Ultimate Wildlife Combo (14 days)
+                    </Link>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-          {/* <div className="container-fluid px-2">
-            <div className="">
-              <h3
-                className="text-center fw-bold pt-4 pb-3 "
-                style={{ color: "darkslategrey" }}
-              >
-                Popular National Parks in Kenya
-              </h3>
-              <div className="container-fluid d-flex flex-column flex-md-row">
-                <Card
-                  img={wildbeast}
-                  title="Maasai mara"
-                  desc="This reserve is home to a large population of lions, elephants, and other animals. Visitors can go on game drives to see the animals in their natural habitat."
-                />
-                <Card
-                  img={flamingo}
-                  title="Lake Nakuru Park"
-                  desc="This park is known for its flocks of flamingos. Visitors can also see zebras, lions, and other animals in the park."
-                />
-                <Card
-                  img={elephant}
-                  title="Kilimanjaro National Park"
-                  desc="This park is home to Mount Kilimanjaro, the tallest mountain in Africa. Visitors can hike to the summit of the mountain, or take a scenic flight over the park. "
-                />
-              </div>
-            </div>
-          </div> */}
-        </div>
-        <div
-          className="tab-pane fade"
-          id="nav-profile"
-          role="tabpanel"
-          aria-labelledby="nav-profile-tab"
-          tabindex="0"
-        >
-          <div className="container-fluid pt-3">
-            <div className="d-flex flex-wrap">
-              <Card
-                img={wildbeast}
-                title="Maasai mara"
-                desc="This reserve is home to a large population of lions, elephants, and other animals. Visitors can go on game drives to see the animals in their natural habitat."
-              />
-              <Card
-                img={flamingo}
-                title="Lake Nakuru Park"
-                desc="This park is known for its flocks of flamingos. Visitors can also see zebras, lions, and other animals in the park."
-              />
-              <Card
-                img={elephant}
-                title="Kilimanjaro National Park"
-                desc="This park is home to Mount Kilimanjaro, the tallest mountain in Africa. Visitors can hike to the summit of the mountain, or take a scenic flight over the park. "
-              />
-              <Card
-                img={nyali}
-                title="Mombasa beaches"
-                desc="This coastal city is a popular destination for beach relaxation. Visitors can also visit the Old Town, a UNESCO World Heritage Site."
-              />
-              <Card
-                img={elephant}
-                title="Kilimanjaro National Park"
-                desc="This park is home to Mount Kilimanjaro, the tallest mountain in Africa. Visitors can hike to the summit of the mountain, or take a scenic flight over the park. "
-              />
-              <Card
-                img={flamingo}
-                title="Lake Nakuru Park"
-                desc="This park is known for its flocks of flamingos. Visitors can also see zebras, lions, and other animals in the park."
-              />
             </div>
           </div>
         </div>
         <div
-          className="tab-pane fade"
-          id="nav-contact"
-          role="tabpanel"
-          aria-labelledby="nav-contact-tab"
-          tabindex="0"
-        >
-          ...
-        </div>
-        <div
-          className="tab-pane fade"
-          id="nav-disabled"
-          role="tabpanel"
-          aria-labelledby="nav-disabled-tab"
-          tabindex="0"
-        >
-          ...
-        </div>
+          className="container-fluid px-2 mt-5"
+          style={{ backgroundColor: "lightgrey" }}
+        ></div>
       </div>
     </div>
   );

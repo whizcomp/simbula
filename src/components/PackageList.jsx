@@ -24,6 +24,14 @@ export default function PackageList() {
           {" "}
           East Africa's Wild Life Combo
         </Link>
+        <Link to="/tour/kenya-beach" className="list-group-item">
+          {" "}
+          Kenya Beach Escape (7 days)
+        </Link>
+        <Link to="/tour/tanz-beach" className="list-group-item">
+          {" "}
+          Zanzibar Beach Escape (6 days)
+        </Link>
       </ol>
     </div>
   );

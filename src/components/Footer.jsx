@@ -1,6 +1,8 @@
 import React from "react";
+
 import { AiFillFacebook } from "react-icons/ai";
 import { FaTwitterSquare, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer py-5">
@@ -11,14 +13,14 @@ export default function Footer() {
             <ul>
               <li className="pb-2">
                 {" "}
-                <a href="">Privacy</a>{" "}
+                <Link to="/privacy">Privacy</Link>{" "}
               </li>
               <li className="pb-2">
-                <a href="">Terms & Conditions</a>{" "}
+                <Link to="/terms">Terms & Conditions</Link>{" "}
               </li>
               <li className="pb-2">
                 {" "}
-                <a href="">Staff login</a>{" "}
+                <Link to="/login">Staff login</Link>{" "}
               </li>
             </ul>
           </div>
@@ -26,8 +28,7 @@ export default function Footer() {
             <p className="header">Address</p>
             <p style={{ lineHeight: 2.0 }}>
               Simbula Safaris ltd Plot 1920, <br></br> Gasper Road-Ntinda Tel:
-              +256708865107/+256788507304 <br></br> Email:
-              info@simbulaSafaris.com
+              +256778194000 <br></br> Email: info@simbulaSafaris.com
             </p>
           </div>
           <div className="col-4">
@@ -46,7 +47,7 @@ export default function Footer() {
               </li>
               <li className="pb-2">
                 <a
-                  href="https://twitter.com/MiAgro_Ug"
+                  href="https://twitter.com/simbulasafaris"
                   target="_blank"
                   className="footer-link"
                   rel="noreferrer"

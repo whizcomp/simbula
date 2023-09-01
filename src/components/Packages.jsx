@@ -5,6 +5,7 @@ import gamedrive from "../assets/game_drive.jpg";
 import monkey from "../assets/gorilla_pexel.jpg";
 import elephant from "../assets/elephant.jpg";
 import zanz from "../assets/zanz_beach.jpg";
+import kenya from "../assets/kenya_beach.jpg";
 
 import giraffe from "../assets/giraffe_wildlife.jpg";
 export default function Packages() {
@@ -56,6 +57,12 @@ export default function Packages() {
 
           Highlights: See the endangered mountain gorillas in Uganda, go on a game drive in the Masai Mara National Reserve in Kenya, see the annual migration of wildebeest and zebras in the Serengeti National Park in Tanzania, go chimpanzee trekking in Nyungwe Forest National Park in Rwanda.
           "
+        />
+        <CardHorizontal
+          img={kenya}
+          link="/tour/kenya-beach"
+          title="Kenya Beach Escape (7 days)"
+          description="This 7-day beach getaway takes you to the sunny shores of Mombasa, Kenya. Relax on pristine white sand beaches, go snorkeling in clear turquoise waters, explore the historic Old Town and experience the vibrant food scene. A perfect escape for sun, sea and sand."
         />
         <CardHorizontal
           img={zanz}

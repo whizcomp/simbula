@@ -66,6 +66,9 @@ export default function KenyanTabs() {
                 {list.map((list) => (
                   <List text={list.title} />
                 ))}
+                <Link to="/book" className="btn " id="btn-book">
+                  Get package
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-4 ">

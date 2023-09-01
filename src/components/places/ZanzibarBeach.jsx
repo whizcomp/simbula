@@ -6,6 +6,7 @@ import kenyabeach from "../../assets/kenya_beach.jpg";
 import chairbeach from "../../assets/chair_beach.jpg";
 import PackageList from "../PackageList";
 import { Link } from "react-router-dom";
+import CountryBanner from "./CountryBanner";
 
 export default function ZanzibarBeach() {
   return (
@@ -14,21 +15,13 @@ export default function ZanzibarBeach() {
         <div className="row">
           <div className="col-12 col-md-9">
             <h3 className="py-3">Zanzibar Beach Escape (6 days)</h3>
-
-            <div className="d-flex  flex-column flex-md-row pb-3">
-              <img src={banner} alt="" width={400} />
-              <div className="d-flex flex-column p-3">
-                <p>
-                  This 6-day beach getaway takes you to the idyllic spice island
+            <CountryBanner
+              img={banner}
+              details="This 6-day beach getaway takes you to the idyllic spice island
                   of Zanzibar. Relax on pristine beaches, go snorkeling in
                   crystal-clear waters, explore historic Stone Town and
-                  experience the vibrant food scene. A perfect tropical escape.
-                </p>
-                <Link to="/book" className="btn btn-primary">
-                  Get package
-                </Link>
-              </div>
-            </div>
+                  experience the vibrant food scene. A perfect tropical escape."
+            />
 
             <div className="mb-3">
               <h3 className="text-center"> package Gallery</h3>
@@ -38,7 +31,7 @@ export default function ZanzibarBeach() {
                 <img src={kenyabeach} alt="" className="gallery-image" />
               </div>
             </div>
-            <div className="container">
+            <div className="container pb-5">
               <h3>Itenary</h3>
               <h6 className="fw-lighter">Days 1-3: Zanzibar</h6>
               <p>
@@ -62,8 +55,7 @@ export default function ZanzibarBeach() {
               </p>
             </div>
           </div>
-          <div className="col-12 col-md-3">
-            <h3 className="text-center py-4">Our packages</h3>
+          <div className="col-12 col-md-3 pb-5 ">
             <PackageList />
           </div>
         </div>

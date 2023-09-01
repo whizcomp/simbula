@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import InfoNav from "./InfoNav";
+import { AiFillMail } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
 export default function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -19,7 +21,6 @@ export default function Navbar() {
         className="navbar fixed-top navbar-expand-lg"
         style={{
           backgroundColor: colorChange ? "whitesmoke" : "transparent",
-          backdropFilter: "blur(2px)",
         }}
       >
         <div className="container-fluid">
@@ -107,16 +108,19 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-            <span className="navbar-text">
+            <span className="navbar-text pe-4">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    info@simbulaSafaris.com
+                  <a className="nav-link" href="mailto:info@simbulaSafaris.com">
+                    <AiFillMail size={30} className="text-bright" />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    +256778194000
+                  <a
+                    className="nav-link ps-4"
+                    href="https://wa.me/256778194000"
+                  >
+                    <FaWhatsapp size="30" style={{ color: "#25D366" }} />
                   </a>
                 </li>
               </ul>

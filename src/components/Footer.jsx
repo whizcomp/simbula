@@ -29,7 +29,8 @@ export default function Footer() {
             <p style={{ lineHeight: 2.0 }}>
               Simbula Safaris LTD , <br />
               P.O Box 129998, Kampala
-              <br /> Tel: +256778194000 <br></br> Email: info@simbulaSafaris.com
+              <br /> Tel: +256778194000, +1(289)547-2690 <br></br> Email:
+              info@simbulaSafaris.com
             </p>
           </div>
           <div className="col-12 col-md-4">

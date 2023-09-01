@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 export default function PackageList() {
   return (
     <div className="">
+      <h3 className="text-center py-4">Our packages</h3>
+
       <ol className="list-group list-group-flush">
         <Link to="/tour/kenya-uganda" className="list-group-item">
           Simbula with the Gorillas and the Big Five (7 days)

@@ -57,7 +57,7 @@
 
   .quote{
     padding-top: 20px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-style: italic;
     color:#857ab1;
   }
@@ -103,8 +103,12 @@ content:open-quote
   background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
   color: #f1f1f1; 
   width: 100%; /* Full width */
-  padding: 20px;
+  padding: 20px; 
 }
+ .nav-link{
+  color:tomato !important;
+  padding-right: 3px;
+ }
 .hero_services{
   background: url('./assets/giraffe.jpg') no-repeat center;
   background-size: cover;
@@ -167,7 +171,7 @@ content:open-quote
   justify-content: space-between; /* Distribute images evenly along the container */
   align-items: center; /* Align images vertically in the center */
   max-width: 100%; /* Limit container to screen width */
-  
+   overflow-x: auto;
 }
 
 .gallery-image {

@@ -6,59 +6,33 @@ export default function ClientsSay() {
       <h1 className="text-center">What our Clients say </h1>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-4"></div>
-          <div
-            id="carouselExampleSlidesOnly"
-            className="container carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="row carousel-inner">
-              <div className="carousel-item active">
-                <div className="d-flex  flex-column flex-md-row justify-content-center align-items-center">
-                  <div className="col-12 col-md-4">
-                    <img src={dp} alt="" className="img-fluid rounded-circle" />
-                  </div>
-                  <blockquote className="quote ps-5">
-                    <p className="quote__text ">
-                      1Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Accusantium repellendus labore quis nemo, nulla vitae
-                      earum! Sed sit saepe facere fugiat similique.
-                    </p>
-                    <p className="quote__name">___ Victor Kipkoech </p>
-                  </blockquote>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                  <div className="col-12 col-md-4">
-                    <img src={dp} alt="" className="img-fluid rounded-circle" />
-                  </div>
-                  <blockquote className="quote ps-5">
-                    <p className="quote__text">
-                      2Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Accusantium repellendus labore quis nemo, nulla vitae
-                      earum! Sed sit saepe facere fugiat similique.
-                    </p>
-                    <p className="quote__name">___ Victor Kipkoech </p>
-                  </blockquote>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                  <div className="col-12 col-md-4">
-                    <img src={dp} alt="" className="img-fluid rounded-circle" />
-                  </div>
-                  <blockquote className="quote ps-5">
-                    <p className="quote__text">
-                      3 Lorem ipsum dolor sit, amet consectetur adipisicing
-                      elit. Accusantium repellendus labore quis nemo, nulla
-                      vitae earum! Sed sit saepe facere fugiat similique.
-                    </p>
-                    <p className="quote__name">___ Victor Kipkoech </p>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
+          <div className="col-12 col-md-4">
+            <blockquote className="quote ps-5">
+              <p className="quote__text ">
+                I had the best time with simbula from stunning destinations, and
+                unforgettable experiences
+              </p>
+              <p className="quote__name">___ Victor Kipkoech </p>
+            </blockquote>
+          </div>
+          <div className="col-12 col-md-4">
+            <blockquote className="quote ps-5">
+              <p className="quote__text ">
+                Five stars! Simbula safaris made our family vacation a breeze.
+                We discovered hidden gems and had a blast exploring new places.
+              </p>
+              <p className="quote__name">___ Mary Anne </p>
+            </blockquote>
+          </div>
+          <div className="col-12 col-md-4">
+            <blockquote className="quote ps-5">
+              <p className="quote__text ">
+                I can't thank Simbula Safaris enough for helping me plan the
+                vacation of a lifetime. Everything was perfect, and the memories
+                will last forever!
+              </p>
+              <p className="quote__name">___ Peter Right </p>
+            </blockquote>
           </div>
         </div>
       </div>

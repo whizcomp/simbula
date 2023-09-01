@@ -5,20 +5,18 @@ import wildbeests from "../../assets/wildbeests.jpg";
 import giraffe from "../../assets/flamingo.jpeg";
 import { Link } from "react-router-dom";
 import PackageList from "../PackageList";
+import CountryBanner from "./CountryBanner";
 
 export default function KenyaTanzania() {
   return (
     <div style={{ marginTop: 80 }}>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-9">
+          <div className="col-12 col-md-9">
             <h3 className="py-3">The Great Rift Valley (8 days)</h3>
-
-            <div className="d-flex pb-3">
-              <img src={gameDrive} alt="" width={400} />
-              <div className="d-flex flex-column p-3">
-                <p>
-                  This 8-day package takes you to the stunning Great Rift
+            <CountryBanner
+              img={gameDrive}
+              details="This 8-day package takes you to the stunning Great Rift
                   Valley, which is home to some of the most beautiful scenery in
                   Africa. You will visit Lake Nakuru National Park, where you
                   can see flamingos, and the Ngorongoro Crater, a UNESCO World
@@ -27,11 +25,8 @@ export default function KenyaTanzania() {
                   of wildlife in the Masai Mara National Reserve, visit the
                   beautiful Lake Nakuru National Park, home to thousands of
                   flamingos, go on a game drive in the Ngorongoro Crater, a
-                  UNESCO World Heritage Site.
-                </p>
-                <button className="btn btn-primary">Get package</button>
-              </div>
-            </div>
+                  UNESCO World Heritage Site."
+            />
 
             <div className="mb-3">
               <h3 className="text-center"> package Gallery</h3>
@@ -82,7 +77,7 @@ export default function KenyaTanzania() {
               </p>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-md-3">
             <h3 className="text-center py-4">Our packages</h3>
             <PackageList />
           </div>

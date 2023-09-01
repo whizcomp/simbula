@@ -7,8 +7,6 @@ import OurNumbers from "./components/OurNumbers";
 import Partners from "./components/Partners";
 import GameReserves from "./components/GameReserves";
 import Beaches from "./components/Beaches";
-import { Link } from "react-router-dom";
-import { IoLogoWhatsapp } from "react-icons/io";
 export default function Home() {
   return (
     <>

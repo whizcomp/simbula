@@ -5,20 +5,19 @@ import serengeti2 from "../../assets/serengeti2.jpg";
 import serengeti1 from "../../assets/serengeti1.jpg";
 import giraffe from "../../assets/giraffe.jpeg";
 import PackageList from "../PackageList";
+import { Link } from "react-router-dom";
+import CountryBanner from "./CountryBanner";
 
 export default function Serengeti() {
   return (
     <div style={{ marginTop: 80 }}>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-9">
+          <div className="col-12 col-md-9">
             <h3 className="py-3">The Great Serengeti Migration (10 days)</h3>
-
-            <div className="d-flex pb-3">
-              <img src={serengeti} alt="" width={400} />
-              <div className="d-flex flex-column p-3">
-                <p>
-                  This 10-day safari takes you to Tanzania's most spectacular
+            <CountryBanner
+              img={serengeti}
+              details="This 10-day safari takes you to Tanzania's most spectacular
                   wildlife havens. Witness over 2 million wildebeest, zebras and
                   antelopes make their annual migration across the vast
                   Serengeti plains. Descend into the Ngorongoro Crater, a UNESCO
@@ -26,11 +25,8 @@ export default function Serengeti() {
                   elephants, giraffes and hippos in Lake Manyara, where the
                   Great Rift Valley meets the shore of a scenic lake. An
                   unforgettable journey for wildlife enthusiasts and photography
-                  buffs.
-                </p>
-                <button className="btn btn-primary">Get package</button>
-              </div>
-            </div>
+                  buffs."
+            />
 
             <div className="mb-3">
               <h3 className="text-center"> package Gallery</h3>
@@ -41,7 +37,7 @@ export default function Serengeti() {
                 <img src={zebra} alt="" className="gallery-image" />
               </div>
             </div>
-            <div className="container">
+            <div className="container pb-3">
               <h3>Itenary</h3>
               <h6 className="fw-lighter">Days 1-4: Serengeti National Park</h6>
               <p>
@@ -76,12 +72,9 @@ export default function Serengeti() {
                 Transfer to Arusha to connect with your international departure
                 flight.
               </p>
-              <p className="pt-3 fw-bold">
-                For the full itinerary and booking, please fill the form
-              </p>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-md-3">
             <h3 className="text-center py-4">Our packages</h3>
             <PackageList />
           </div>

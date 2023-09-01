@@ -7,37 +7,28 @@ import birds from "../../assets/bird_fly.jpg";
 import monkeys from "../../assets/monkeys.jpg";
 import PackageList from "../PackageList";
 import { Link } from "react-router-dom";
+import CountryBanner from "./CountryBanner";
 
 export default function KenyaUganda() {
   return (
     <div style={{ marginTop: 80 }}>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-9">
+          <div className="col-12 col-md-9">
             <h3 className="py-3">
               Simbula with the Gorillas and the Big Five (7 days)
             </h3>
-
-            <div className="d-flex pb-3">
-              <img src={gorilla} alt="" width={400} />
-              <div className="d-flex flex-column p-3">
-                <p>
-                  This 7-day package takes you to Uganda and Kenya, where you
+            <CountryBanner
+              img={gorilla}
+              details="This 7-day package takes you to Uganda and Kenya, where you
                   can go gorilla trekking in Bwindi Impenetrable National Park
                   and go on a game drive in the Masai Mara National Reserve.
-                </p>
-                <p>
                   Highlights: See the endangered mountain gorillas in their
                   natural habitat, go on a game drive in the Masai Mara National
                   Reserve and see the Big Five, visit the stunning Queen
                   Elizabeth National Park, home to lions, elephants, hippos, and
-                  zebras.
-                </p>
-                <Link to="/book" className="btn btn-primary">
-                  Get package
-                </Link>
-              </div>
-            </div>
+                  zebras."
+            />
 
             <div className="mb-3">
               <h3 className="text-center"> package Gallery</h3>
@@ -81,8 +72,7 @@ export default function KenyaUganda() {
               </p>
             </div>
           </div>
-          <div className="col-3">
-            <h3 className="text-center py-4">Our packages</h3>
+          <div className="col-12 col-md-3">
             <PackageList />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import wildbeast from "../assets/wildbeests.jpg";
 import gorilla from "../assets/gorilla2.jpg";
-import akagera from "../assets/akagera.jpg";
+import akagera from "../assets/zebra_serengeti.jpg";
 export default function GameReserves({ cards }) {
   return (
     <div className="px-3 ">
@@ -22,16 +22,16 @@ export default function GameReserves({ cards }) {
         />
         <Card
           img={gorilla}
-          title="Hells Gate National Park"
+          title="Bwindi Impenetrable National Park"
           country="Uganda"
           link="/tour/kenya-uganda"
-          desc="Lake Naivasha, Hell’s Gate National Park is easily accessible from Nairobi. Its home to a variety of wildlife, flora and over 100 species of birds. The Hell’s Gate National Park main attractions are the dramatic volcanic scenery"
+          desc="Bwindi Impenetrable National Park, located in Uganda, is known for its dense tropical forest and critical role in conserving over half of the world's population of endangered mountain gorillas."
         />
 
         <Card
           img={akagera}
           country="Tanzania"
-          link="/tour/tanzania"
+          link="/tour/kenya-tanzania"
           title="Akagera National Park"
           desc="Akagera National Park is a popular tourist destination and offers a variety of activities, including game drives, boat rides, and bird watching. "
         />

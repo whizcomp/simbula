@@ -2,7 +2,12 @@
   width: 100vw;
   height: 90vh;
   object-fit: cover;
-  opacity:0.8
+  opacity:0.9
+}
+#btn-book{
+  background-color: tomato !important;
+  padding: 15px;
+  color:whitesmoke;
 }
 .carousel-caption{
   position: absolute;
@@ -110,7 +115,7 @@ content:open-quote
   color:#0F1A37;
 }
 .hero_services_rwanda{
-  background: url('./assets/monkey_baby.jpg') no-repeat center;
+  background: url('./assets/mountain-gorilla.jpg') no-repeat center;
   background-size: cover;
   height: 530px;
   position: relative;
@@ -120,6 +125,15 @@ content:open-quote
 }
 .hero_services_uganda{
   background: url('./assets/chimpanzees.jpg') no-repeat center;
+  background-size: cover;
+  height: 540px;
+  position: relative;
+  /* filter: blur(4px); */
+  z-index: -1;
+  color:#0F1A37;
+}
+.hero_services_about{
+  background: url('./assets/series79.jpg') no-repeat center;
   background-size: cover;
   height: 530px;
   position: relative;

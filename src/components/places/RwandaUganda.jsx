@@ -43,11 +43,38 @@ export default function RwandaUganda() {
               </div>
             </div>
             <div className="container">
-              <p className="text-bright py-3">
-                Our travel packages can be customized to meet your specific
-                needs and preferences. We offer a wide range of options, so you
-                can travel the way you want. Please contact us to learn more and
-                we will be happy to help you plan your perfect trip.
+              <h3>Itenary</h3>
+              <h6 className="fw-lighter">
+                Days 1-3: Bwindi Impenetrable National Park (Uganda)
+              </h6>
+              <p>
+                Trek through dense jungle to observe a mountain gorilla family
+                in their natural habitat. Spot other primates like chimpanzees,
+                L'Hoest's monkeys and golden monkeys in the forest. Overnight in
+                a luxury forest lodge.
+              </p>
+              <h6 className="fw-lighter">
+                Days 4-5: Nyungwe Forest National Park (Rwanda)
+              </h6>
+              <p>
+                Track chimpanzees in Nyungwe Forest, one of the oldest
+                rainforests in Africa with 13 primate species. Do a canopy walk
+                for views of the forest, spot colorful birds and hike scenic
+                trails. Stay in a comfortable forest lodge.
+              </p>
+              <h6 className="fw-lighter">
+                Days 6-7: Volcanoes National Park (Rwanda)
+              </h6>
+              <p>
+                Ascend the Virunga Mountains to trek the famed mountain gorillas
+                of Rwanda. Witness the gorillas in their natural habitat -
+                playing, foraging and resting. Overnight at a scenic mountain
+                lodge with stunning views of the Virunga peaks.
+              </p>
+              <h6 className="fw-lighter">Days 7</h6>
+              <p>Return to Kigali on Day 7.</p>
+              <p className="pt-3 fw-bold">
+                For the full itinerary and booking, please fill the form
               </p>
             </div>
           </div>

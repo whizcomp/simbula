@@ -20,7 +20,11 @@ export default function ContactUs() {
                   label="Message"
                   placeholder="write your message"
                 />
-                <button className="btn btn-primary">Submit</button>
+                <div class="d-grid gap-2 py-4">
+                  <button class="btn btn-primary" type="button">
+                    Send Message
+                  </button>
+                </div>
               </form>
             )}
           </Formik>

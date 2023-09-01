@@ -5,6 +5,7 @@ import serengeti2 from "../../assets/serengeti2.jpg";
 import serengeti1 from "../../assets/serengeti1.jpg";
 import giraffe from "../../assets/giraffe.jpeg";
 import PackageList from "../PackageList";
+import { Link } from "react-router-dom";
 
 export default function EastAfrica() {
   return (
@@ -30,7 +31,9 @@ export default function EastAfrica() {
                   unforgettable journey for wildlife enthusiasts and photography
                   buffs.
                 </p>
-                <button className="btn btn-primary">Get package</button>
+                <Link to="/book" className="btn btn-primary">
+                  Get package
+                </Link>
               </div>
             </div>
 
@@ -44,11 +47,49 @@ export default function EastAfrica() {
               </div>
             </div>
             <div className="container">
-              <p className="text-bright py-3">
-                Our travel packages can be customized to meet your specific
-                needs and preferences. We offer a wide range of options, so you
-                can travel the way you want. Please contact us to learn more and
-                we will be happy to help you plan your perfect trip.
+              <h3>Itenary</h3>
+              <h6 className="fw-lighter">
+                Days 1-3: Bwindi Impenetrable National Park (Uganda)
+              </h6>
+              <p>
+                Trek through dense jungle to spend an unforgettable hour with
+                endangered mountain gorillas. Spot chimpanzees, golden monkeys
+                and over 350 bird species in the forest. Learn about the Batwa
+                pygmy culture. Overnight in a luxury lodge.
+              </p>
+              <h6 className="fw-lighter">
+                Days 4-6: Masai Mara National Reserve (Kenya)
+              </h6>
+              <p>
+                Fly to the Masai Mara and embark on game drives across the
+                savanna grasslands. Witness lions, leopards, rhinos, elephants
+                and buffaloes in their natural habitat. Visit a Maasai village
+                to learn about the semi-nomadic Maasai tribe. Stay in a luxury
+                tented camp with amazing views.
+              </p>
+              <h6 className="fw-lighter">
+                Days 7-10: Serengeti National Park & Ngorongoro Crater
+                (Tanzania)
+              </h6>
+              <p>
+                Fly to the Serengeti to witness the dramatic Great Migration of
+                over 2 million wildebeest. Descend into the Ngorongoro Crater to
+                spot black rhinos, lions and flamingos. Overnight in luxury
+                lodges with stunning views.
+              </p>
+              <h6 className="fw-lighter">
+                Days 11-14: Nyungwe Forest National Park & Kigali (Rwanda)
+              </h6>
+              <p>
+                Track chimpanzees in Nyungwe Forest, one of the oldest
+                rainforests in Africa. Do a canopy walk and spot colorful birds.
+                Visit the Kigali Genocide Memorial. Learn about Rwanda's culture
+                and history.
+              </p>
+              <h6 className="fw-lighter"> Day 14.</h6>
+              <p>Depart Kigali </p>
+              <p className="pt-3 fw-bold">
+                For the full itinerary and booking, please fill the form
               </p>
             </div>
           </div>

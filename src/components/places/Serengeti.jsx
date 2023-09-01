@@ -42,11 +42,42 @@ export default function Serengeti() {
               </div>
             </div>
             <div className="container">
-              <p className="text-bright py-3">
-                Our travel packages can be customized to meet your specific
-                needs and preferences. We offer a wide range of options, so you
-                can travel the way you want. Please contact us to learn more and
-                we will be happy to help you plan your perfect trip.
+              <h3>Itenary</h3>
+              <h6 className="fw-lighter">Days 1-4: Serengeti National Park</h6>
+              <p>
+                Fly from Arusha to the Serengeti, Tanzania's most famous park.
+                Embark on daily game drives across the Serengeti's sprawling
+                savanna grasslands. Witness the dramatic Great Migration of over
+                2 million wildebeest and zebras between July and October. Stay
+                in a luxury tented camp in the heart of the national park.
+              </p>
+              <h6 className="fw-lighter">
+                Days 5-6: Ngorongoro Conservation Area
+              </h6>
+              <p>
+                Descend into the Ngorongoro Crater, the world's largest intact
+                caldera, for spectacular wildlife viewing. Spot black rhinos,
+                lions, elephants, buffaloes and flamingos in this natural wonder
+                of the world. Overnight on the rim of the crater with stunning
+                views.
+              </p>
+              <h6 className="fw-lighter">
+                Days 7-9: Lake Manyara National Park
+              </h6>
+              <p>
+                Game drive through Lake Manyara, a scenic park where the Great
+                Rift Valley meets the shore of a shallow soda lake. View
+                elephants, hippos, giraffes, zebras and over 400 bird species in
+                the park. Overnight in a luxury lodge with panoramic views of
+                the lake.
+              </p>
+              <h6 className="fw-lighter">Day 10: Depart Arusha</h6>
+              <p>
+                Transfer to Arusha to connect with your international departure
+                flight.
+              </p>
+              <p className="pt-3 fw-bold">
+                For the full itinerary and booking, please fill the form
               </p>
             </div>
           </div>

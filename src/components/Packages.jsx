@@ -2,8 +2,10 @@ import React from "react";
 import CardHorizontal from "./CardHorizontal";
 import gorilla from "../assets/gorilla.jpg";
 import gamedrive from "../assets/game_drive.jpg";
-import monkey from "../assets/monkey_baby.jpg";
+import monkey from "../assets/gorilla_pexel.jpg";
 import elephant from "../assets/elephant.jpg";
+import zanz from "../assets/zanz_beach.jpg";
+
 import giraffe from "../assets/giraffe_wildlife.jpg";
 export default function Packages() {
   return (
@@ -54,6 +56,12 @@ export default function Packages() {
 
           Highlights: See the endangered mountain gorillas in Uganda, go on a game drive in the Masai Mara National Reserve in Kenya, see the annual migration of wildebeest and zebras in the Serengeti National Park in Tanzania, go chimpanzee trekking in Nyungwe Forest National Park in Rwanda.
           "
+        />
+        <CardHorizontal
+          img={zanz}
+          link="/tour/tanz-beach"
+          title="Zanzibar Beach Escape (6 days)"
+          description="This 6-day beach getaway takes you to the idyllic spice island of Zanzibar. Relax on pristine beaches, go snorkeling in crystal-clear waters, explore historic Stone Town and experience the vibrant food scene. A perfect tropical escape."
         />
       </div>
     </div>

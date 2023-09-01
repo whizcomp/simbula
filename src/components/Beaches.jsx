@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
 import beach from "../assets/beach.jpg";
-import zanzibar from "../assets/zanzibar1.jpg";
-import zanz from "../assets/zanz.jpg";
+import zanzibar from "../assets/beach_woman.jpg";
+import zanz from "../assets/beach_zanzib.jpg";
 
 export default function Beaches() {
   return (

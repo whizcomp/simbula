@@ -1,14 +1,14 @@
 import React from "react";
 
 import { AiFillFacebook } from "react-icons/ai";
-import { FaTwitterSquare, FaInstagram } from "react-icons/fa";
+import { FaTwitterSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer py-5">
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-12 col-md-4">
             <p className="header">About us</p>
             <ul>
               <li className="pb-2">
@@ -24,19 +24,20 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-4">
-            <p className="header">Address</p>
+          <div className="col-12 col-md-4">
+            <p className="header pt-5 pt-md-0">Address</p>
             <p style={{ lineHeight: 2.0 }}>
-              Simbula Safaris ltd Plot 1920, <br></br> Gasper Road-Ntinda Tel:
-              +256778194000 <br></br> Email: info@simbulaSafaris.com
+              Simbula Safaris LTD , <br />
+              P.O Box 129998, Kampala
+              <br /> Tel: +256778194000 <br></br> Email: info@simbulaSafaris.com
             </p>
           </div>
-          <div className="col-4">
-            <p className="header">social media</p>
+          <div className="col-12 col-md-4">
+            <p className="header pt-5 pt-md-0">social media</p>
             <ul className="ps-5 pt-2">
               <li className="pb-2">
                 <a
-                  href="https://facebook.com/MiAgroUg"
+                  href="https://www.facebook.com/profile.php?id=100084069978657&mibextid=ZbWKwL"
                   target="_blank"
                   className="footer-link"
                   rel="noreferrer"
@@ -59,7 +60,7 @@ export default function Footer() {
 
               <li className="pb-2">
                 <a
-                  href="https://instagram.com/miagroug"
+                  href="https://instagram.com/simbulasafaris?igshid=NjIwNzIyMDk2Mg=="
                   target="_blank"
                   className="footer-link"
                   rel="noreferrer"
@@ -67,6 +68,21 @@ export default function Footer() {
                   {" "}
                   <FaInstagram size="25" style={{ padding: "2px" }} />
                   Instagram
+                </a>
+              </li>
+              <li className="pb-2">
+                <a
+                  href="https://wa.me/256778194000"
+                  target="_blank"
+                  className="footer-link"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <FaWhatsapp
+                    size="25"
+                    style={{ padding: "2px", color: "#25D366" }}
+                  />
+                  <span className="fs-5 fw-medium">Whatsapp</span>
                 </a>
               </li>
             </ul>

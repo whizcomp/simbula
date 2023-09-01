@@ -39,7 +39,7 @@ export default function UgandaTabs() {
                 className="text-center fw-bold pt-4 pb-2 "
                 style={{ color: "darkslategrey" }}
               >
-                About Kenya
+                About Uganda
               </h2>
               <p className="text-center pty-3">
                 Uganda is a lush, landlocked country in East Africa that is home

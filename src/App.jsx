@@ -20,6 +20,9 @@ import Privacy from "./components/Privacy";
 import TConditions from "./components/TConditions";
 import ContactUs from "./components/ContactUs";
 import Login from "./components/admin/Login";
+import Book from "./components/Book";
+import KenyaBeach from "./components/places/KenyaBeach";
+import ZanzibarBeach from "./components/places/ZanzibarBeach";
 export default function App() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -42,6 +45,7 @@ export default function App() {
           <Route path="/terms" element={<TConditions />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/book" element={<Book />} />
 
           <Route path="/places/kenya" element={<Kenya />} />
           <Route path="/places/tanz" element={<Tanzania />} />
@@ -52,6 +56,9 @@ export default function App() {
           <Route path="/tour/rwanda-uganda" element={<RwandaUganda />} />
           <Route path="/tour/tanzania" element={<Serengeti />} />
           <Route path="/tour/east-africa" element={<EastAfrica />} />
+          <Route path="/tour/kenya-beach" element={<KenyaBeach />} />
+          <Route path="/tour/tanz-beach" element={<ZanzibarBeach />} />
+
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />

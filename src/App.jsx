@@ -23,6 +23,8 @@ import Login from "./components/admin/Login";
 import Book from "./components/Book";
 import KenyaBeach from "./components/places/KenyaBeach";
 import ZanzibarBeach from "./components/places/ZanzibarBeach";
+import Accomodation from "./components/Accomodation";
+import Airport from "./components/Airport";
 export default function App() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -46,6 +48,8 @@ export default function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/accomodation" element={<Accomodation />} />
+          <Route path="/airport-transfer" element={<Airport />} />
 
           <Route path="/places/kenya" element={<Kenya />} />
           <Route path="/places/tanz" element={<Tanzania />} />

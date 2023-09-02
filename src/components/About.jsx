@@ -34,6 +34,7 @@ export default function About() {
       </div>
       <AboutTemp />
       <WhyUs />
+
       <ClientsSay />
     </div>
   );

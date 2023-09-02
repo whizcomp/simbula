@@ -70,6 +70,9 @@ export default function UgandaTabs() {
                   local communities and conservation. Uganda awaits - let your
                   adventure begin!
                 </p>
+                <Link to="/book" className="btn " id="btn-book">
+                  Book Now
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-4 ">

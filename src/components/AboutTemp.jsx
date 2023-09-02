@@ -5,7 +5,7 @@ import vision from "../assets/vision.png";
 export default function AboutTemp() {
   return (
     <div style={{ backgroundColor: "#fce" }}>
-      <div className="container py-5" data-aos="slide-up">
+      <div className="container py-5">
         <div className="row">
           <div className="col-12 col-md-6">
             <img src={vision} alt="" />
@@ -15,7 +15,7 @@ export default function AboutTemp() {
               meaningful and impactful experiences for our clients.
             </p>
           </div>
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <div className="col-12 col-md-6 ">
             <img src={mission} alt="" width="60" height="60" />
             <h4 className="pt-3">Mission</h4>
             <p>

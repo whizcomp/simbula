@@ -10,11 +10,10 @@ export default function SelectField({
   const { errors, touched } = useFormikContext();
   return (
     <div className="pb-3">
-      <label for={name} className="form-label">
+      <label for={name} className="form-label fw-bold">
         {title}
       </label>
       <Field as="select" className="form-select" name={name}>
-        <option value="">{title}</option>
         {options.map((option) => (
           <option key={option[option_id]} value={option[option_id]}>
             {option[option_name]}

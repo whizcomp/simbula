@@ -67,7 +67,7 @@ export default function KenyanTabs() {
                   <List text={list.title} />
                 ))}
                 <Link to="/book" className="btn " id="btn-book">
-                  Get package
+                  Book Now
                 </Link>
               </div>
             </div>

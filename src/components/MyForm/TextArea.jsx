@@ -5,7 +5,7 @@ export default function TextArea({ label, name, placeholder, ...props }) {
     useFormikContext();
   return (
     <div class="mb-3">
-      <label for="message" class="form-label">
+      <label for="message" class="form-label fw-bold">
         {label}
       </label>
       <textarea

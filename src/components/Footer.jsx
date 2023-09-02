@@ -13,6 +13,14 @@ export default function Footer() {
             <ul>
               <li className="pb-2">
                 {" "}
+                <Link to="/accomodation">Accomodation</Link>{" "}
+              </li>
+              <li className="pb-2">
+                {" "}
+                <Link to="/airport-transfer">Airport Transfer</Link>{" "}
+              </li>
+              <li className="pb-2">
+                {" "}
                 <Link to="/privacy">Privacy</Link>{" "}
               </li>
               <li className="pb-2">

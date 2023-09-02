@@ -30,7 +30,7 @@ export default function GameReserves({ cards }) {
 
         <Card
           img={akagera}
-          country="Tanzania"
+          country="Rwanda"
           link="/tour/kenya-tanzania"
           title="Akagera National Park"
           desc="Akagera National Park is a popular tourist destination and offers a variety of activities, including game drives, boat rides, and bird watching. "

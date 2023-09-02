@@ -13,7 +13,7 @@ export default function TextInput({
   return (
     <>
       <div className="mb-3">
-        <label for={name} className="form-label">
+        <label for={name} className="form-label fw-mdium">
           {label}
         </label>
         <input

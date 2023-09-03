@@ -5,18 +5,21 @@ import TextArea from "./MyForm/TextArea";
 import SelectField from "./MyForm/SelectField";
 
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { booking_country } from "./backend/api";
+import { booking_country, booking_package } from "./backend/api";
 
-export default function Book() {
+export default function BookPackage() {
   const safariExperience = [
-    { id: 1, option: "Wildlife viewing" },
-    { id: 2, option: "photography" },
-    { id: 3, option: "Camping" },
-    { id: 4, option: "Luxury Lodge" },
+    { id: 1, option: "Simbula with the Gorillas and the Big Five (7 days)" },
+    { id: 2, option: "The Great Rift Valley (8 days)" },
+    { id: 3, option: "The Chimpanzees and the Volcanoes (7 days)" },
+    { id: 4, option: "The Serengeti and the Serengeti (10 days)" },
+    { id: 5, option: "East Africa's Wild Life Combo(14 days)" },
+    { id: 6, option: "Kenya Beach Escape (7 days)" },
+    { id: 7, option: "Zanzibar Beach Escape (6 days)" },
   ];
   const handleSubmit = async (values) => {
     try {
-      const { data } = await booking_country(values);
+      const { data } = await booking_package(values);
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -34,12 +37,10 @@ export default function Book() {
                 name: "",
                 phone: "",
                 residing_country: "",
-                visit_country: "",
-                safari_experience: "",
+                package_no: "",
                 hear_about: "",
                 message: "",
                 arrival_date: null,
-                depart_date: null,
               }}
               onSubmit={(values) => handleSubmit(values)}
             >
@@ -61,12 +62,7 @@ export default function Book() {
                         label="Residing Country"
                       />
                     </div>
-                    <div className="col-12 col-md-6">
-                      <TextInput
-                        name="visit_country"
-                        label="Visiting Country"
-                      />
-                    </div>
+
                     <div className="col-12 col-md-6">
                       <TextInput
                         name="arrival_date"
@@ -74,21 +70,17 @@ export default function Book() {
                         label="Date of arrival"
                       />
                     </div>
+
                     <div className="col-12 col-md-6">
-                      <TextInput
-                        name="depart_date"
-                        type="date"
-                        label="Date of depart"
+                      <SelectField
+                        options={safariExperience}
+                        option_name="option"
+                        option_id="id"
+                        title="Select your package?"
+                        name="package_no"
                       />
                     </div>
                   </div>
-                  <SelectField
-                    options={safariExperience}
-                    option_name="option"
-                    option_id="id"
-                    title="What type of safari experience are you interested in?"
-                    name="safari_experience"
-                  />
                   <TextInput
                     name="hear_about"
                     label="How did you hear about us?"

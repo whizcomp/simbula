@@ -4,15 +4,27 @@ import TextInput from "../components/MyForm/TextInput";
 import TextArea from "../components/MyForm/TextArea";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaTwitterSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { message } from "./backend/api";
 export default function ContactUs() {
+  const handleSubmit = async (values) => {
+    try {
+      const { data } = await message(values);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="container pt-5 mt-5">
       <div className="row">
         <h1>Contact us</h1>
         <div className="col-12 col-md-8 mb-4">
-          <Formik initialValues={{ email: "", name: "", message: "" }}>
+          <Formik
+            initialValues={{ email: "", name: "", message: "" }}
+            onSubmit={(values) => handleSubmit(values)}
+          >
             {({ handleSubmit, isSubmitting }) => (
-              <form>
+              <form onSubmit={handleSubmit}>
                 <TextInput name="name" label="Name" />
                 <TextInput name="email" label="Email" />
                 <TextArea
@@ -21,7 +33,11 @@ export default function ContactUs() {
                   placeholder="write your message"
                 />
                 <div class="d-grid gap-2 py-4">
-                  <button class="btn btn-primary" type="button">
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                    disabled={isSubmitting}
+                  >
                     Send Message
                   </button>
                 </div>

@@ -1,20 +1,43 @@
 import { Formik } from "formik";
 import React from "react";
 import TextInput from "./MyForm/TextInput";
-import TextArea from "./MyForm/TextArea";
-import SelectField from "./MyForm/SelectField";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { airport } from "./backend/api";
 
 export default function Airport() {
+  const handleSubmit = async (values) => {
+    try {
+      const { data } = await airport(values);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="container mt-5 pt-5">
       <div className="row">
         <div className="col-12 col-md-8">
           <div className="shadow-lg p-3 mb-4">
             <h3 className="fw-bold text-center">Airport Transfer</h3>
-            <Formik initialValues={{ email: "", name: "", message: "" }}>
+            <Formik
+              initialValues={{
+                email: "",
+                name: "",
+                phone: "",
+                arrival_port: "",
+                depart_port: "",
+                flight_arrival_number: "",
+                flight_depart_number: "",
+                pass: "",
+                one_way: "",
+                vehicle: "",
+                special_needs: "",
+                pick_up: "",
+              }}
+              onSubmit={(values) => handleSubmit(values)}
+            >
               {({ handleSubmit, isSubmitting }) => (
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row p-3">
                     <div className="col-12 col-md-6">
                       <TextInput name="name" label="Full Name" />
@@ -81,7 +104,13 @@ export default function Airport() {
                     </div>
                   </div>
                   <div className="d-grid gap-2 pb-4">
-                    <button className="btn btn-primary">Submit</button>
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                      disabled={isSubmitting}
+                    >
+                      Submit
+                    </button>
                   </div>
                 </form>
               )}
@@ -91,10 +120,7 @@ export default function Airport() {
         <div className="col-12 col-md-4">
           <div className="shadow-lg container p-5 ">
             <h3 className="text-bright text-center">Reach out</h3>
-            <div className="d-flex pt-5">
-              <FaPhoneAlt size={40} />
-              <p className="fs-5 ps-3">+1(289)547-2690 </p>
-            </div>
+
             <div className="d-flex pt-5">
               <FaPhoneAlt size={40} />
               <p className="fs-5 ps-3">+256778194000 -Uganda</p>

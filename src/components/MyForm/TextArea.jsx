@@ -4,12 +4,12 @@ export default function TextArea({ label, name, placeholder, ...props }) {
   const { values, errors, touched, handleChange, handleBlur } =
     useFormikContext();
   return (
-    <div class="mb-3">
-      <label for="message" class="form-label fw-bold">
+    <div className="mb-3">
+      <label for="message" className="form-label fw-bold">
         {label}
       </label>
       <textarea
-        class="form-control"
+        className="form-control"
         id={name}
         rows="3"
         placeholder={placeholder}

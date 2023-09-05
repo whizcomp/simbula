@@ -96,7 +96,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="/blogs" className="nav-link">
                   {" "}
                   Blog
                 </Link>
@@ -120,7 +120,7 @@ export default function Navbar() {
                     className="nav-link ps-4"
                     href="https://wa.me/256778194000"
                   >
-                    <FaWhatsapp size="30" style={{ color: "#25D366" }} />
+                    <FaWhatsapp size="30" style={{ color: "black" }} />
                   </a>
                 </li>
               </ul>

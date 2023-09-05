@@ -25,8 +25,10 @@ import KenyaBeach from "./components/places/KenyaBeach";
 import ZanzibarBeach from "./components/places/ZanzibarBeach";
 import Accomodation from "./components/Accomodation";
 import Airport from "./components/Airport";
-import BookPackage from "./components/BookPackage";
-
+import BookPackage from "./components/blog/BookPackage";
+import Blogs from "./components/Blogs";
+import ViewBlog from "./components/blog/ViewBlog";
+import Info from "./components/Info";
 export default function Navigator() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -40,7 +42,7 @@ export default function Navigator() {
   return (
     <div>
       <BrowserRouter>
-        {/* <Navbar /> */}
+        <Navbar />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -52,8 +54,10 @@ export default function Navigator() {
           <Route path="/book" element={<Book />} />
           <Route path="/accomodation" element={<Accomodation />} />
           <Route path="/airport-transfer" element={<Airport />} />
+          <Route path="/success" element={<Info />} />
 
           <Route path="/book_package" element={<BookPackage />} />
+          <Route path="/article/:title" element={<ViewBlog />} />
 
           <Route path="/places/kenya" element={<Kenya />} />
           <Route path="/places/tanz" element={<Tanzania />} />
@@ -67,8 +71,9 @@ export default function Navigator() {
           <Route path="/tour/kenya-beach" element={<KenyaBeach />} />
           <Route path="/tour/tanz-beach" element={<ZanzibarBeach />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

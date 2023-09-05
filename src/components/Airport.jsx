@@ -1,18 +1,38 @@
 import { Formik } from "formik";
+import * as Yup from "yup";
 import React from "react";
 import TextInput from "./MyForm/TextInput";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { airport } from "./backend/api";
-
+import { useNavigate } from "react-router-dom";
 export default function Airport() {
+  const navigate = useNavigate();
   const handleSubmit = async (values) => {
     try {
       const { data } = await airport(values);
-      console.log(data);
+      navigate("/success");
     } catch (error) {
       console.log(error);
     }
   };
+  const validateSchema = Yup.object().shape({
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    name: Yup.string()
+      .min(2, "At least two characters")
+      .required("Name is required"),
+    phone: Yup.string()
+      .min(10, "At least 10 numbers")
+      .required("phone number is required"),
+    arrival_port: Yup.string().required("*required"),
+    depart_port: Yup.string().required("*required"),
+    flight_arival_number: Yup.string().required("*required"),
+    flight_depart_number: Yup.string().required("*required"),
+    pass: Yup.string().required("*required"),
+    one_way: Yup.string().required("*required"),
+    vehicle: Yup.string().required("*required"),
+    special_needs: Yup.string().required("*required"),
+    pick_up: Yup.string().required("*required"),
+  });
   return (
     <div className="container mt-5 pt-5">
       <div className="row">
@@ -34,6 +54,7 @@ export default function Airport() {
                 special_needs: "",
                 pick_up: "",
               }}
+              validationSchema={validateSchema}
               onSubmit={(values) => handleSubmit(values)}
             >
               {({ handleSubmit, isSubmitting }) => (

@@ -9,7 +9,7 @@ export default function CountryBanner({ img, details }) {
       </div>
       <div className="col-12 col-md-7 d-flex flex-column flex-start p-3">
         <p>{details}</p>
-        <Link to="/book" className="btn btn-primary">
+        <Link to="/book_package" className="btn btn-primary">
           Get package
         </Link>
       </div>

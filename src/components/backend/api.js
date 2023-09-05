@@ -117,10 +117,80 @@ const booking_package = async (data) => {
         arrival_date
     })
 }
+const get_booking_package = () => {
+    return axios.get(`${endpoint}/book_package`)
+}
+const get_booking_package_id = (id) => {
+    return axios.get(`${endpoint}/book_package/${id}`)
+}
+const get_booking_country = () => {
+    return axios.get(`${endpoint}/book_country`)
+}
+const get_booking_country_id = (id) => {
+    return axios.get(`${endpoint}/book_country/${id}`)
+}
+const get_accomodation_id = (id) => {
+    return axios.get(`${endpoint}/accomodation/${id}`)
+}
+const get_accomodation = () => {
+    return axios.get(`${endpoint}/accomodation`)
+}
+const get_messages = () => {
+    return axios.get(`${endpoint}/messages`)
+}
+const get_message_id = (id) => {
+    return axios.get(`${endpoint}/message/${id}`)
+}
+const get_airport_transfer = () => {
+    return axios.get(`${endpoint}/airport`)
+}
+const get_airport_transfer_id = (id) => {
+    return axios.get(`${endpoint}/airport/${id}`)
+}
+const login = (email, password) => {
+    return axios.post(`${endpoint}/login`, {
+        email,
+        password
+    })
+}
+const apiPostBlog = (data) => {
+    const {
+        title,
+        image,
+        description,
+        content
+    } = data;
+    return axios.post(`${endpoint}/blog`, {
+        title,
+        image,
+        description,
+        content
+    })
+}
+const apiGetBlog = (title) => {
+    return axios.get(`${endpoint}/blog/${title}`)
+}
+const apiGetAllBlogs = () => {
+    return axios.get(`${endpoint}/blog`)
+}
 export {
     booking_country,
     message,
     accomodation,
     airport,
-    booking_package
+    booking_package,
+    get_booking_package,
+    get_booking_package_id,
+    get_booking_country,
+    get_booking_country_id,
+    get_accomodation,
+    get_accomodation_id,
+    get_messages,
+    get_message_id,
+    login,
+    get_airport_transfer,
+    get_airport_transfer_id,
+    apiPostBlog,
+    apiGetBlog,
+    apiGetAllBlogs
 }

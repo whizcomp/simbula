@@ -20,7 +20,7 @@ export default function OurNumbers() {
             {({ countUpRef }) => (
               <div>
                 <h5 ref={countUpRef} className="display-3 fw-bold" />
-                <p className="fs-italic fs-4">NUmber Of Clients Reached</p>
+                <p className="fs-italic fs-4">Number Of Clients Reached</p>
               </div>
             )}
           </CountUp>
@@ -30,7 +30,7 @@ export default function OurNumbers() {
             {({ countUpRef }) => (
               <div>
                 <h5 ref={countUpRef} className="display-3 fw-bold" />
-                <p className="fs-italic fs-4">NUmber Of Countries serving</p>
+                <p className="fs-italic fs-4">Number Of Countries serving</p>
               </div>
             )}
           </CountUp>

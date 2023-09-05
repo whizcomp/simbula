@@ -1,63 +1,65 @@
 import React, { useEffect, useState } from "react";
-import { get_booking_country } from "../backend/api";
-import { Link } from "react-router-dom";
+import { get_airport_transfer } from "../backend/api";
 import LoadingSkeleton from "../mycomponents/LoadingSkeleton";
+import { Link } from "react-router-dom";
 
-export default function CountryBooking() {
+export default function Airport() {
   useEffect(() => {
-    getBook();
+    getTransfers();
   }, []);
-  const getBook = async () => {
+  const getTransfers = async () => {
     try {
       setLoading(true);
-      const { data } = await get_booking_country();
+      const { data } = await get_airport_transfer();
       console.log(data);
-      setBooking(data);
+      setTransfers(data);
       setLoading(false);
     } catch (error) {
-      setError(true);
       setLoading(false);
+      setError(true);
     }
   };
-  const [booking, setBooking] = useState([]);
+  const [transfers, setTransfers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   return (
     <div>
-      <h1 className="fw-bold text-center">country Booking</h1>
+      <h3 className="text-bright">Airport Transfer</h3>
       <hr />
-      <div className="">
-        {!loading ? (
+      {!loading ? (
+        <div className="pt-3">
           <table className="table">
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Safari Experience</th>
+                <th>Email</th>
+                <th>Phone</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              {booking.map((book) => (
+              {transfers.map((transfer) => (
                 <tr>
-                  <td>{book.name}</td>
-                  <td>{book.experience}</td>
+                  <td>{transfer.name}</td>
+                  <td>{transfer.email}</td>
+                  <td>{transfer.phone}</td>
                   <td>
                     {" "}
                     <Link
-                      to={`/country_book/${book.book_id} `}
                       className="btn btn-primary"
+                      to={`/airport/${transfer.airport_id}`}
                     >
-                      View
-                    </Link>
+                      View Transfer
+                    </Link>{" "}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-        ) : (
-          <LoadingSkeleton />
-        )}
-      </div>
+        </div>
+      ) : (
+        <LoadingSkeleton />
+      )}
     </div>
   );
 }

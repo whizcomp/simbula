@@ -6,7 +6,7 @@ export default function SideList({ title, link }) {
     <div>
       <Link
         to={link}
-        className="fs-6 text-light fw-medium text-decoration-none nav-link"
+        className="fs-6 text-light fw-medium text-decoration-none"
       >
         {title}
       </Link>

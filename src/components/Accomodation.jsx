@@ -1,19 +1,38 @@
 import { Formik } from "formik";
+import * as Yup from "yup";
 import React from "react";
 import TextInput from "./MyForm/TextInput";
-import TextArea from "./MyForm/TextArea";
-import SelectField from "./MyForm/SelectField";
+import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { accomodation } from "./backend/api";
 export default function Accomodation() {
+  const navigate = useNavigate();
   const handleSubmit = async (values) => {
     try {
       const { data } = await accomodation(values);
-      console.log(data);
+      navigate("/success");
     } catch (error) {
       console.log(error);
     }
   };
+  const validateSchema = Yup.object().shape({
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    name: Yup.string()
+      .min(2, "At least two characters")
+      .required("Name is required"),
+    phone: Yup.string()
+      .min(10, "At least 10 numbers")
+      .required("phone number is required"),
+    mode: Yup.string()
+      .min(2, "At least two characters")
+      .required("Name is required"),
+    checkin: Yup.date().required("Check in date is required"),
+    checkout: Yup.date().required("Check out date is required"),
+    adults: Yup.string().required("*required"),
+    kids: Yup.string().required("*required"),
+    price: Yup.string().required("*required"),
+    location: Yup.string().min(2, "at least 2 char"),
+  });
   return (
     <div className="container mt-5 pt-5">
       <div className="row">
@@ -33,6 +52,7 @@ export default function Accomodation() {
                 price: "",
                 location: "",
               }}
+              validationSchema={validateSchema}
               onSubmit={(values) => handleSubmit(values)}
             >
               {({ handleSubmit, isSubmitting }) => (

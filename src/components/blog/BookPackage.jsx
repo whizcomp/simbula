@@ -1,11 +1,12 @@
 import { Formik } from "formik";
 import React from "react";
-import TextInput from "./MyForm/TextInput";
-import TextArea from "./MyForm/TextArea";
-import SelectField from "./MyForm/SelectField";
+import TextInput from "../MyForm/TextInput";
+import TextArea from "../MyForm/TextArea";
+import SelectField from "../MyForm/SelectField";
 
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { booking_country, booking_package } from "./backend/api";
+import { booking_country, booking_package } from "../backend/api";
+import { useNavigate } from "react-router-dom";
 
 export default function BookPackage() {
   const safariExperience = [
@@ -17,10 +18,11 @@ export default function BookPackage() {
     { id: 6, option: "Kenya Beach Escape (7 days)" },
     { id: 7, option: "Zanzibar Beach Escape (6 days)" },
   ];
+  const navigate = useNavigate();
   const handleSubmit = async (values) => {
     try {
       const { data } = await booking_package(values);
-      console.log(data);
+      navigate("/success");
     } catch (error) {
       console.log(error);
     }

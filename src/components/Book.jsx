@@ -3,10 +3,10 @@ import React from "react";
 import TextInput from "./MyForm/TextInput";
 import TextArea from "./MyForm/TextArea";
 import SelectField from "./MyForm/SelectField";
-
+import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { booking_country } from "./backend/api";
-
+import * as Yup from "yup";
 export default function Book() {
   const safariExperience = [
     { id: 1, option: "Wildlife viewing" },
@@ -14,14 +14,35 @@ export default function Book() {
     { id: 3, option: "Camping" },
     { id: 4, option: "Luxury Lodge" },
   ];
+  const navigate = useNavigate();
   const handleSubmit = async (values) => {
     try {
-      const { data } = await booking_country(values);
-      console.log(data);
+      await booking_country(values);
+      navigate("/success");
     } catch (error) {
       console.log(error);
     }
   };
+  const validateSchema = Yup.object().shape({
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    name: Yup.string()
+      .min(2, "At least two characters")
+      .required("Name is required"),
+    phone: Yup.string()
+      .min(10, "At least 10 numbers")
+      .required("phone number is required"),
+    residing_country: Yup.string()
+      .min(2, "At least two characters")
+      .required("Name is required"),
+    arrival_date: Yup.date().required("Arrival date is required"),
+    depart_date: Yup.date().required("Depart date is required"),
+    visit_country: Yup.string()
+      .min(2, "At least two characters")
+      .required("Name is required"),
+    safari_experience: Yup.string().required("*required"),
+    hear_about: Yup.string().required("*required"),
+    message: Yup.string().min(2, "at least 2 char"),
+  });
   return (
     <div className="container mt-5 pt-5">
       <div className="row">
@@ -41,6 +62,7 @@ export default function Book() {
                 arrival_date: null,
                 depart_date: null,
               }}
+              validationSchema={validateSchema}
               onSubmit={(values) => handleSubmit(values)}
             >
               {({ handleSubmit, isSubmitting }) => (

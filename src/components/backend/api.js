@@ -1,5 +1,5 @@
 import axios from "axios";
-const endpoint = "http://localhost:2331/api/bookings"
+const endpoint = "https://api.simbulasafaris.com/api/bookings"
 const booking_country = (data) => {
 
     const {

@@ -33,7 +33,7 @@ export default function Hero() {
             <img src={three} className="d-block w-100 img-carousel" alt="..." />
             <div className="carousel-caption  text-dark justify-content-center align-items">
               <h1 className="text-light fw-bold image_text">
-                Giraffes at maasai mara game reserve
+                Giraffes at Maasai Mara game reserve
               </h1>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function Hero() {
             <img src={one} className="d-block w-100 img-carousel" alt="..." />
             <div className="carousel-caption  text-dark justify-content-center align-items">
               <h1 className="text-light fw-bold image_text">
-                Lion climbing at Bwindi Impenetrable National Park
+                Lion climbing at Queen ELizabeth National Park
               </h1>
             </div>
           </div>

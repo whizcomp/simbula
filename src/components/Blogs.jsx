@@ -11,7 +11,6 @@ export default function Blogs() {
     try {
       setLoading(true);
       const { data } = await apiGetAllBlogs();
-      console.log(data);
       setBlogs(data);
       setLoading(false);
     } catch (error) {
@@ -24,7 +23,7 @@ export default function Blogs() {
   const [error, setError] = useState(false);
 
   return (
-    <div className="container pt-5 mt-5">
+    <div className="container pt-5 mt-5" style={{ minHeight: "500px" }}>
       <h1 className="text-center">Our Stories</h1>
       {!loading ? (
         <div>

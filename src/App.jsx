@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import jwt from "jwt-decode";
 import Navigator from "./Navigator";
 import Dashboard from "./components/admin/Dashboard";
 import UserContext from "./components/backend/userContext";
@@ -11,11 +10,17 @@ export default function App() {
     checkLogin();
   }, []);
   const checkLogin = async () => {
+    console.log("....checking oauth");
     try {
+      console.log("....try checking oauth");
+
       const token = await localStorage.getItem("token");
       const decoded = jwt(token);
+      console.log(decoded);
       setUser(decoded);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <UserContext.Provider value={{ user, setUser }}>

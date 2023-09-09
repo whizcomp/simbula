@@ -1,5 +1,4 @@
 import React from "react";
-import dp from "../assets/dp.jpg";
 export default function ClientsSay() {
   return (
     <div className="py-5 shadow " style={{ backgroundColor: "#d4cfcf" }}>

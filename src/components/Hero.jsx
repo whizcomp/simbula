@@ -3,7 +3,7 @@ import three from "../assets/giraffe.jpg";
 import one from "../assets/lion_on_tree.jpg";
 import two from "../assets/gorilla_bwindi.jpg";
 import four from "../assets/series79.jpg";
-import NavBar from "./Navbar";
+import banner from "../assets/banner_1.jpg"
 export default function Hero() {
   return (
     <div>
@@ -26,6 +26,14 @@ export default function Hero() {
             <div className="carousel-caption  text-dark justify-content-center align-items">
               <h1 className="text-light fw-bold image_text">
                 Bwindi Impenetrable National Park
+              </h1>
+            </div>
+          </div>
+          <div className="carousel-item" data-bs-interval="4000">
+            <img src={banner} className="d-block w-100 img-carousel" alt="..." />
+            <div className="carousel-caption  text-dark justify-content-center align-items">
+              <h1 className="text-light fw-bold image_text">
+                Jinja Visit blah blah blah
               </h1>
             </div>
           </div>

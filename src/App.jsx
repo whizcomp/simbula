@@ -16,7 +16,6 @@ export default function App() {
 
       const token = await localStorage.getItem("token");
       const decoded = jwt(token);
-      console.log(decoded);
       setUser(decoded);
     } catch (error) {
       console.log(error);

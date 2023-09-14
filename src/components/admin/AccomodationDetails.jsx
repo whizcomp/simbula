@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { get_accomodation, get_booking_country_id } from "../backend/api";
+import { get_accomodation, get_accomodation_id, get_booking_country_id } from "../backend/api";
 import { useParams } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import LoadingSkeleton from "../mycomponents/LoadingSkeleton";
@@ -11,7 +11,7 @@ export default function AccomodationDetails() {
   const getBook = async () => {
     try {
       setLoading(true);
-      const { data } = await get_accomodation(id);
+      const { data } = await get_accomodation_id(id);
       console.log(data);
       setBookings(data[0]);
       setLoading(false);

@@ -33,7 +33,7 @@ export default function Hero() {
             <img src={banner} className="d-block w-100 img-carousel" alt="..." />
             <div className="carousel-caption  text-dark justify-content-center align-items">
               <h1 className="text-light fw-bold image_text">
-                Jinja Visit blah blah blah
+                Simbula Touring Mabira
               </h1>
             </div>
           </div>

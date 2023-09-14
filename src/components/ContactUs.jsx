@@ -77,7 +77,7 @@ export default function ContactUs() {
                 </a>
 
                 <a
-                  href="https://instagram.com/miagroug"
+                href="https://instagram.com/simbulasafaris?igshid=NjIwNzIyMDk2Mg=="
                   target="_blank"
                   className="footer-link"
                   rel="noreferrer"

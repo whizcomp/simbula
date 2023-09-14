@@ -15,6 +15,16 @@ export default function Navbar() {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
+  const closeNavbar = () => {
+    const navbarToggle = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse.show");
+    
+    if (navbarToggle && navbarCollapse) {
+      if (navbarCollapse.classList.contains("show")) {
+        navbarToggle.click();
+      }
+    }
+  };
   return (
     <div>
       <nav
@@ -24,9 +34,9 @@ export default function Navbar() {
         }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand logo" href="#">
+          <Link className="navbar-brand logo" to="/" onClick={closeNavbar}>
             <img src={logo} alt="" height="50" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -41,7 +51,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-light">
               <li className="nav-item">
-                <Link to="/" className="nav-link active" aria-current="page">
+                <Link to="/" className="nav-link active" aria-current="page"onClick={closeNavbar}>
                   Home
                 </Link>
               </li>
@@ -62,47 +72,47 @@ export default function Navbar() {
                   style={{ backgroundColor: "#2f4f4f", color: "wheat" }}
                 >
                   <li className="dropdown-item ">
-                    <Link to="/places/kenya" className="nav-link">
+                    <Link to="/places/kenya" className="nav-link"onClick={closeNavbar}>
                       Kenya
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link to="/places/rwanda" className="nav-link">
+                    <Link to="/places/rwanda" className="nav-link"onClick={closeNavbar}>
                       Rwanda
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link to="/places/uganda" className="nav-link">
+                    <Link to="/places/uganda" className="nav-link"onClick={closeNavbar}>
                       Uganda
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link to="/places/tanz" className="nav-link">
+                    <Link to="/places/tanz" className="nav-link" onClick={closeNavbar}>
                       Tanzania
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="/packages" className="nav-link">
+                <Link to="/packages" className="nav-link" onClick={closeNavbar}>
                   {" "}
                   Our Simbula Safaris
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">
+                <Link to="/about" className="nav-link" onClick={closeNavbar}>
                   {" "}
                   About Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/blogs" className="nav-link">
+                <Link to="/blogs" className="nav-link"onClick={closeNavbar}>
                   {" "}
                   Blog
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link">
+                <Link to="/contact" className="nav-link"onClick={closeNavbar}>
                   {" "}
                   Contact Us
                 </Link>

@@ -3,11 +3,14 @@ import Card from "./Card";
 import beach from "../assets/beach.jpg";
 import zanzibar from "../assets/beach_woman.jpg";
 import zanz from "../assets/beach_zanzib.jpg";
-
+import AOS from "aos";
 export default function Beaches() {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="p-3">
-      <div className="text-center">
+      <div className="text-center" data-aos="fade-up">
         <h3 className="fw-bold">Coastal Visits</h3>
         <p className="text-muted">Visit popular beaches</p>
       </div>

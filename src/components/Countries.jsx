@@ -5,10 +5,14 @@ import flamingo from "../assets/gorilla2.jpg";
 import rwanda from "../assets/akagera.jpg";
 import CheckMark from "./mycomponents/CheckMark";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 export default function Countries() {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="pt-5">
-      <h3 className="fw-bold  text-center font-italic text-capitalize">
+    <div className="pt-5" data-aos="fade-up">
+      <h3 className="fw-bold  text-center font-italic text-capitalize" data-aos="fade-up">
         {" "}
         Countries you can find us
       </h3>
@@ -17,7 +21,7 @@ export default function Countries() {
       </p>
       <div className="px-3">
         <div className="d-flex flex-column flex-md-row justify-content-end">
-          <div className=" d-flex me-3  pb-3 flex-column align-items-center p-0 mb-5 shadow bg-body-tertiary rounded">
+          <div className=" d-flex me-3  pb-3 flex-column align-items-center p-0 mb-5 shadow bg-body-tertiary rounded" data-aos="zoom-in">
             <img
               src={mombasa}
               alt=""
@@ -40,7 +44,7 @@ export default function Countries() {
             </Link>
           </div>
 
-          <div className=" d-flex  me-2 pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
+          <div className=" d-flex  me-2 pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded" data-aos="zoom-in">
             <img src={flamingo} alt="" className="img-fluid" width="400" />
             <p className="pt-3 fw-bolder fs-4 text-center text-bright">
               {" "}
@@ -59,7 +63,7 @@ export default function Countries() {
               View All
             </Link>
           </div>
-          <div className=" d-flex me-2 pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
+          <div className=" d-flex me-2 pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded" data-aos="zoom-in">
             <img src={rwanda} alt="" className="img-fluid" width="400" />
             <p className="pt-3 fw-bolder fs-4 text-center text-bright">
               {" "}
@@ -78,7 +82,7 @@ export default function Countries() {
               View All
             </Link>
           </div>
-          <div className=" d-flex me-2  pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded">
+          <div className=" d-flex me-2  pb-3 flex-column align-items-center p-0 mb-5 shadow-lg bg-body-tertiary rounded" data-aos="zoom-in">
             <img
               src={tanz}
               alt=""

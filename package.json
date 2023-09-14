@@ -1,6 +1,7 @@
 {
   "name": "simbula",
   "private": true,
+  "homepage": "https://simbulasafaris.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

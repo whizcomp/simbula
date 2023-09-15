@@ -2,7 +2,6 @@ import React from "react";
 import three from "../assets/giraffe.jpg";
 import one from "../assets/lion_on_tree.jpg";
 import two from "../assets/gorilla_bwindi.jpg";
-import four from "../assets/series79.jpg";
 import banner from "../assets/banner_1.jpg"
 export default function Hero() {
   return (
@@ -14,7 +13,7 @@ export default function Hero() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="4000">
-            <img src={four} className="d-block w-100 img-carousel" alt="..." />
+            <img src={banner} className="d-block w-100 img-carousel" alt="..." />
             <div className="carousel-caption ">
               <h1 className="text-light fw-bold image_text">
                 Welcome to Simbula Safaris
@@ -29,14 +28,7 @@ export default function Hero() {
               </h1>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="4000">
-            <img src={banner} className="d-block w-100 img-carousel" alt="..." />
-            <div className="carousel-caption  text-dark justify-content-center align-items">
-              <h1 className="text-light fw-bold image_text">
-                Simbula Touring Mabira
-              </h1>
-            </div>
-          </div>
+          
           <div className="carousel-item" data-bs-interval="4000">
             <img src={three} className="d-block w-100 img-carousel" alt="..." />
             <div className="carousel-caption  text-dark justify-content-center align-items">

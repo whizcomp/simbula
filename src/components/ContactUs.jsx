@@ -5,11 +5,15 @@ import TextArea from "../components/MyForm/TextArea";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaTwitterSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { message } from "./backend/api";
+import { toast } from 'react-toastify';
 export default function ContactUs() {
-  const handleSubmit = async (values) => {
+  const handleSubmit = async (values,resetForm) => {
     try {
       const { data } = await message(values);
-      console.log(data);
+      if(data.affectedRows>0){
+        toast("Message sent successfully!");
+        resetForm()
+      }
     } catch (error) {
       console.log(error);
     }
@@ -21,7 +25,7 @@ export default function ContactUs() {
         <div className="col-12 col-md-8 mb-4">
           <Formik
             initialValues={{ email: "", name: "", message: "" }}
-            onSubmit={(values) => handleSubmit(values)}
+            onSubmit={(values,{resetForm}) => handleSubmit(values,resetForm)}
           >
             {({ handleSubmit, isSubmitting }) => (
               <form onSubmit={handleSubmit}>

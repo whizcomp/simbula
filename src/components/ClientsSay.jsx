@@ -2,8 +2,11 @@ import React from "react";
 import AOS from "aos";
 export default function ClientsSay() {
   React.useEffect(() => {
-    AOS.init();
+    window.onload = () => {
+      AOS.init();
+    };
   }, []);
+
   return (
     <div className="py-5 shadow " style={{ backgroundColor: "#d4cfcf" }}>
       <h1 className="text-center" data-aos="fade-down">What our Clients say </h1>
